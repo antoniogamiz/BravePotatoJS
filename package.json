@@ -1,19 +1,19 @@
 {
-  "name": "brave-potato-js",
-  "version": "0.0.1",
-  "description": "Mini-game to learn Node-JS",
+  "name": "oribujs",
+  "version": "1.0.0",
+  "description": "",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/antoniogamiz/BravePotatoJS.git"
+    "url": "git+https://github.com/antoniogamiz/OribuJS.git"
   },
-  "author": "Antonio",
+  "author": "@antoniogamiz",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/antoniogamiz/BravePotatoJS/issues"
+    "url": "https://github.com/antoniogamiz/OribuJS/issues"
   },
-  "homepage": "https://github.com/antoniogamiz/BravePotatoJS#readme"
+  "homepage": "https://github.com/antoniogamiz/OribuJS#readme"
 }

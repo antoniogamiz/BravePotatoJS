@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title> Oribu </title>
+        <link rel="stylesheet" type="text/css" href="/client/css/login.css">   
+        <script src="https://cdn.socket.io/socket.io-1.4.5.js"></script>
+    </head>
+        <body>
+        <div class="login-box">
+            <img class="avatar" alt="avatar" src="/client/img/avatar.png">
+            <h1>Login Here</h1>
+                <form>
+                    <p>Username</p>
+                    <input type="text" id="username-input" placeholder="Enter Username">
+                    <p>Password</p>
+                    <input type="password" id="password-input" placeholder="Enter Password">
+                    
+                    <button type="button" id="sign-in">Sign In</button>
+                    <button type="button" id="sign-up">Sign Up</button>
+                    <a href="#">Forget Password</a>    
+                </form>
+            </div>
+        <script>
+            var socket = io();
+            
+            //sign
+            var inputUsername = document.getElementById("username-input");
+            var inputPassword = document.getElementById("password-input");
+            
+            var signInButton = document.getElementById("sign-in");
+            var signUpButton = document.getElementById("sign-up");
+
+            //signin-signup handlers
+            signInButton.onclick = function(){
+                socket.emit('signIn', {username: inputUsername.value, password: inputPassword.value});
+            }
+            
+            signUpButton.onclick = function(){
+                console.log('Emitting sign-up signal');
+                socket.emit('signUp', {username: inputUsername.value, password: inputPassword.value});
+            }
+
+            socket.on('signInResponse', function(data){
+                if(data.success)
+                    alert('Sign In successful');
+                else
+                    alert('Sign In unsuccessful');
+            });
+
+            socket.on('signUpResponse', function(data){
+                if(data.success)
+                    alert('Sign Up successful');
+                else
+                    alert('Sign Up unsuccessful');
+            });
+        </script>
+        </body>
+</html>
