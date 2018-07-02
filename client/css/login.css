@@ -57,7 +57,7 @@ h1{
     color: #fff;
     font-size: 16px;
 }
-.login-box button[type="button"]
+.login-box button[type="submit"]
 {
     width: 100%;
     border: none;
@@ -71,12 +71,9 @@ h1{
     cursor: pointer;
 }
 
-
-.login-box input[type="submit"]:hover
+.login-box button[type="submit"]:hover
 {
-    cursor: pointer;
     background: #39dc79;
-    color: #000;
 }
 
 .login-box a{

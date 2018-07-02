@@ -16,6 +16,11 @@ app.get('/', function(req, res){
   res.sendFile(__dirname + '/client/html/login.html');
 });
 
+app.post('/login', function(req, res){
+    console.log(req.body);
+    res.sendFile(__dirname + '/client/html/login.html');
+});
+
 app.use('/client', express.static(__dirname + '/client'));
 
 serv.listen(PORT);
@@ -38,7 +43,6 @@ io.sockets.on('connection', function(socket){
     });
 
     socket.on('signUp', function(data){
-        console.log("RECEIVING SIGN-UP SIGNAL");
         Login.isUsernameTaken( {username: data.username}, function(res){
             if(res){
                 socket.emit('signUpResponse', {success: false});

@@ -14,7 +14,6 @@ Login.isValidPassword = function(data, callback){
 
 Login.isUsernameTaken = function(data, callback){
     Login.db.account.find( {username: data.username}, function(err, res){
-        console.log(res);
         if(res.length)
             callback(true);
         else

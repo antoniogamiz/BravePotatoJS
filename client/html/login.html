@@ -11,14 +11,14 @@
                 <div class="login-box">
                     <img class="avatar" alt="avatar" src="/client/img/avatar.png">
                     <h1>Login Here</h1>
-                    <form>
+                    <form method="post" action="/login">
                         <p>Username</p>
-                        <input type="text" id="username-input" placeholder="Enter Username" required>
+                        <input type="text" name="username" id="username-input" placeholder="Enter Username" >
                         <p>Password</p>
-                        <input type="password" id="password-input" placeholder="Enter Password" required>
+                        <input type="password" name="password" id="password-input" placeholder="Enter Password" >
                         
-                        <button type="button" id="sign-in">Sign In</button>
-                        <button type="button" id="sign-up">Sign Up</button>
+                        <button type="submit" id="sign-in" name="signin">Sign In</button>
+                        <button type="submit" id="sign-up" name="signup">Sign Up</button>
                         <a href="#">Forget Password</a>    
                     </form>
                 </div>
