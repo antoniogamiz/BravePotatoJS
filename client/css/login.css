@@ -7,15 +7,20 @@ body{
     background-position: center;
     font-family: sans-serif;
 }
+
+.login-container {
+    position: relative;
+}
+
 .login-box{
     width: 320px;
     height: 420px;
-    background: rgba(114, 21, 21, 0.5);
-    color: #fff;
     top: 50%;
     left: 50%;
+    transform: translate(-50%, 50%);
+    background: rgba(114, 21, 21, 0.5);
+    color: #fff;
     position: absolute;
-    transform: translate(-50%,-50%);
     box-sizing: border-box;
     padding: 70px 30px;
 }
@@ -84,7 +89,15 @@ h1{
     color: #39dc79;
 }
 
-
+p#sign-response-text {
+    color: #39dc79;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 400%);
+    position: absolute;
+    text-align: center;
+    display: none;
+}
 
 
 
