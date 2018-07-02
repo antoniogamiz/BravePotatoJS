@@ -15,5 +15,15 @@
   "bugs": {
     "url": "https://github.com/antoniogamiz/OribuJS/issues"
   },
-  "homepage": "https://github.com/antoniogamiz/OribuJS#readme"
+  "homepage": "https://github.com/antoniogamiz/OribuJS#readme",
+  "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.18.3",
+    "connect-mongo": "^2.0.1",
+    "express": "^4.16.3",
+    "express-session": "^1.15.6",
+    "mongojs": "^2.6.0",
+    "nodemon": "^1.17.5",
+    "socket.io": "^2.1.1"
+  }
 }

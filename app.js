@@ -1,6 +1,7 @@
 
 var mongojs = require('mongojs');
 var db = mongojs('localhost:27017/oribu', ['account']);
+var bodyParser = require('body-parser')
 
 require('./server/login.js');
 
@@ -12,15 +13,16 @@ var serv = require('http').Server(app);
 
 var PORT = 2000;
 
+var urlencodedParser = bodyParser.urlencoded({ extended: false })
+
 app.get('/', function(req, res){
   res.sendFile(__dirname + '/client/html/login.html');
 });
 
-app.post('/login', function(req, res){
+app.post('/login', urlencodedParser, function(req, res){
     console.log(req.body);
-    res.sendFile(__dirname + '/client/html/login.html');
+    //res.sendFile(__dirname + '/client/html/login.html');
 });
-
 app.use('/client', express.static(__dirname + '/client'));
 
 serv.listen(PORT);
