@@ -17,10 +17,6 @@ var UserSchema = new mongoose.Schema({
   password: {
     type: String,
     required: true,
-  },
-  passwordConf: {
-    type: String,
-    required: true,
   }
 });
 
@@ -36,9 +32,11 @@ UserSchema.statics.authenticate = function (email, password, callback) {
         }
         bcrypt.compare(password, user.password, function (err, result) {
           if (result === true) {
-            return callback(null, user);
+            return callback(null);
           } else {
-            return callback();
+            var err = new Error('Incorrect password');
+            err.status = 1234;
+            return callback(err);
           }
         })
       });
@@ -56,4 +54,5 @@ UserSchema.pre('save', function () {
 });
 
 var User = mongoose.model('User', UserSchema);
+
 module.exports = User;

@@ -18,7 +18,7 @@
                         <input type="text" name="email" id="email-input" placeholder="Enter e-mail" >
                         <p>Password</p>
                         <input type="password" name="password" id="password-input" placeholder="Enter Password" >
-                        
+                        <input type="text" name="signtype" id="sign-type-input" style="display: none">                                            
                         <button type="submit" id="sign-in" name="signin">Sign In</button>
                         <button type="submit" id="sign-up" name="signup">Sign Up</button>
                         <a href="#">Forget Password</a>    
@@ -28,8 +28,17 @@
                 <p id="sign-response-text"></p>
             </div>
             <script>
-            var socket = io();
-            
+                var signType = document.getElementById('sign-type-input');
+                var signInButton = document.getElementById('sign-in');
+                var signUpButton = document.getElementById('sign-up');
+
+                signInButton.onclick = function(){
+                    signType.value = 'sign-in';
+                }
+                signUpButton.onclick = function(){
+                    signType.value = 'sign-up';
+                }
+                
             </script>
         </body>
 </html>

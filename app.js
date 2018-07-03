@@ -13,8 +13,8 @@ var db = mongoose.connection;
 
 var User = require('./data/db/user-schema.js');
 
-var session = require('express-session');
-var MongoStore = require('connect-mongo')(session);
+// var session = require('express-session');
+// var MongoStore = require('connect-mongo')(session);
 
 //handle mongo error
 db.on('error', console.error.bind(console, 'db-connection error:'));
@@ -43,43 +43,57 @@ app.get('/', function(req, res){
   res.sendFile(__dirname + '/client/html/login.html');
 });
 
-app.post('/login', urlencodedParser, function(req, res){
-    if (req.body.email &&
-        req.body.username &&
-        req.body.password &&
-        true) {
-        //req.body.passwordConf
+app.use('/client', express.static(__dirname + '/client'));
 
+//=====================================================
+
+app.post('/login', urlencodedParser, function(req, res){
+    if (req.body.email && req.body.username && req.body.password) {
         var userData = {
           email: req.body.email,
           username: req.body.username,
           password: req.body.password,
-          passwordConf: true, //req.body.passwordConf
         }
 
-        //use schema.create to insert data into the db
-        User.create(userData, function (err, user) {
-            if (err) {
-                console.log(err);
-            } else {
-            return res.redirect('/login');
-            }
-        });
-}      
+        if( req.body.signtype === 'sign-in' ){
+
+            User.authenticate(userData.email, userData.password, function(err){
+                if( err ){
+                    if(err.status === 401){
+                        res.sendFile(__dirname + '/client/html/login.html');
+                        console.log('User not found');        
+                    } else if(err.status === 1234){
+                        res.sendFile(__dirname + '/client/html/login.html');
+                        console.log('Incorrect password');        
+                    }
+                }
+                else
+                    res.sendFile(__dirname + '/client/html/index.html');
+            });
+        }
+        else {
+            User.create(userData, function (err, user) {
+                if (err) {
+                    console.log(err);
+                }
+                console.log('User correctyle registered');
+                res.sendFile(__dirname + '/client/html/index.html');
+            });
+        }      
+    }
 });
 
-app.use('/client', express.static(__dirname + '/client'));
+//=====================================================
 
 //use sessions for tracking logins
-app.use(session({
-    secret: 'work hard',
-    resave: true,
-    saveUninitialized: false,
-    store: new MongoStore({
-      mongooseConnection: db
-    })
-}));
-
+// app.use(session({
+//     secret: 'work hard',
+//     resave: true,
+//     saveUninitialized: false,
+//     store: new MongoStore({
+//       mongooseConnection: db
+//     })
+// }));
 
 
 serv.listen(PORT);
