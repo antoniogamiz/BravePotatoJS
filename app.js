@@ -1,29 +1,86 @@
 
-var mongojs = require('mongojs');
-var db = mongojs('localhost:27017/oribu', ['account']);
-var bodyParser = require('body-parser')
+var PORT = 2000;
 
-require('./server/login.js');
+//=====================================================
 
-Login.db = db;
+var mongoose = require('mongoose');
+var mongoDB = 'mongodb://127.0.0.1/oribu';
+
+mongoose.connect(mongoDB);
+mongoose.Promise = global.Promise;
+
+var db = mongoose.connection;
+
+var User = require('./data/db/user-schema.js');
+
+var session = require('express-session');
+var MongoStore = require('connect-mongo')(session);
+
+//handle mongo error
+db.on('error', console.error.bind(console, 'db-connection error:'));
+db.once('open', function () {
+  // we're connected!
+});
+
+//=====================================================
 
 var express = require('express');
 var app = express();
 var serv = require('http').Server(app);
 
-var PORT = 2000;
+//=====================================================
 
+var bodyParser = require('body-parser') //Necessary to procces POST request with JavaScript
 var urlencodedParser = bodyParser.urlencoded({ extended: false })
+
+// parse incoming requests
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: false }));
+
+//=====================================================
 
 app.get('/', function(req, res){
   res.sendFile(__dirname + '/client/html/login.html');
 });
 
 app.post('/login', urlencodedParser, function(req, res){
-    console.log(req.body);
-    //res.sendFile(__dirname + '/client/html/login.html');
+    if (req.body.email &&
+        req.body.username &&
+        req.body.password &&
+        true) {
+        //req.body.passwordConf
+
+        var userData = {
+          email: req.body.email,
+          username: req.body.username,
+          password: req.body.password,
+          passwordConf: true, //req.body.passwordConf
+        }
+
+        //use schema.create to insert data into the db
+        User.create(userData, function (err, user) {
+            if (err) {
+                console.log(err);
+            } else {
+            return res.redirect('/login');
+            }
+        });
+}      
 });
+
 app.use('/client', express.static(__dirname + '/client'));
+
+//use sessions for tracking logins
+app.use(session({
+    secret: 'work hard',
+    resave: true,
+    saveUninitialized: false,
+    store: new MongoStore({
+      mongooseConnection: db
+    })
+}));
+
+
 
 serv.listen(PORT);
 
@@ -32,29 +89,5 @@ console.log('Listening  on port 2000.');
 
 var io = require('socket.io')(serv,{});
 io.sockets.on('connection', function(socket){
-
-    socket.on('signIn', function(data){
-        Login.isValidPassword(data, function(res){
-            if(res){
-                socket.emit('signInResponse', {success: true});
-            }
-            else{
-                socket.emit('signInResponse', {success: false});
-            }
-        });
-    });
-
-    socket.on('signUp', function(data){
-        Login.isUsernameTaken( {username: data.username}, function(res){
-            if(res){
-                socket.emit('signUpResponse', {success: false});
-            }
-            else{
-                Login.addUser(data, function(){
-                    socket.emit('signUpResponse', {success: true} );
-                });
-            }
-        });
-    });
-
+    return;
 });

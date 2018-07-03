@@ -13,7 +13,9 @@
                     <h1>Login Here</h1>
                     <form method="post" action="/login">
                         <p>Username</p>
-                        <input type="text" name="username" id="username-input" placeholder="Enter Username" >
+                        <input type="text" name="username" id="username-input" placeholder="Enter username" >
+                        <p>E-mail</p>
+                        <input type="text" name="email" id="email-input" placeholder="Enter e-mail" >
                         <p>Password</p>
                         <input type="password" name="password" id="password-input" placeholder="Enter Password" >
                         
@@ -28,45 +30,6 @@
             <script>
             var socket = io();
             
-            //sign
-            var inputUsername = document.getElementById("username-input");
-            var inputPassword = document.getElementById("password-input");
-            
-            var signInButton = document.getElementById("sign-in");
-            var signUpButton = document.getElementById("sign-up");
-            
-            var signTextResponse = document.getElementById("sign-response-text");
-            //signin-signup handlers
-            signInButton.onclick = function(){
-                socket.emit('signIn', {username: inputUsername.value, password: inputPassword.value});
-            }
-            
-            signUpButton.onclick = function(){
-                socket.emit('signUp', {username: inputUsername.value, password: inputPassword.value});
-            }
-            
-            var updateText = function(display, msg){
-                signTextResponse.style.display = display;
-                signTextResponse.innerHTML = msg;
-            }
-
-            socket.on('signInResponse', function(data){
-                if(data.success){
-                    updateText("block", "Sign-in successful");
-                }
-                else{
-                    updateText("block", "Sign-in unsuccessful");
-                }
-            });
-
-            socket.on('signUpResponse', function(data){
-                if(data.success){
-                    updateText("block", "Sign-un successful");
-                }
-                else{
-                    updateText("block", "Sign-up unsuccessful");
-                }
-            });
-        </script>
+            </script>
         </body>
 </html>
