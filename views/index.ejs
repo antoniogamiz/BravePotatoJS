@@ -28,14 +28,14 @@
       <h2>Popular Manga</h2>
     </div>
     <div class="" id="popular-manga-cover-page-container">
-      <% for(let i=0; i<mangaCoverPage.length; i++) { %>
+      <% for(let i=0; i<mangaCoverPages.length; i++) { %>
         <div class="manga-cover-page">
-        <img src="<%= mangaCoverPage[i].coverPath %>" alt="cover-page">
+        <img src="<%= mangaCoverPages[i].coverPath %>" alt="cover-page">
         <div id="title-chapter-manga-cover-page">
-          <h4 id="manga-title"><%= mangaCoverPage[i].mangaTitle %></h4>
-          <h4 id="manga-chapter"><%= mangaCoverPage[i].lastChapter %></h4>
+          <h4 id="manga-title"><%= mangaCoverPages[i].mangaTitle %></h4>
+          <h4 id="manga-chapter"><%= mangaCoverPages[i].lastChapter %></h4>
           <div id="go-to-manga-buttom">
-            <a href="<%= mangaCoverPage[i].url %>"><img src="/icons/right-arrow-circular-button.png" alt="arrow-button"></a>
+            <a href="<%= mangaCoverPages[i].url %>"><img src="/icons/right-arrow-circular-button.png" alt="arrow-button"></a>
           </div>
         </div>
       </div>

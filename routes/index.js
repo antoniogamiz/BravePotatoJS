@@ -14,7 +14,7 @@ populars.fill( {
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', {mangaCoverPage: populars} );
+  res.render('index', {mangaCoverPages: populars} );
 });
 
 module.exports = router;
