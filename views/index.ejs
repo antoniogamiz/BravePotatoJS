@@ -26,7 +26,7 @@
       <img src="/icons/thumb-up.png" alt="thumb-up">
       <h2>Popular Manga</h2>
     </div>
-    <div class="" id="popular-manga-cover-page-container">
+    <div id="popular-manga-cover-page-container">
       <% for(let i=0; i<mangaCoverPages.length; i++) { %>
         <div class="manga-cover-page">
         <img src="<%= mangaCoverPages[i].coverPath %>" alt="cover-page">
@@ -87,7 +87,7 @@
     const allCoverPages = ([]).slice.call(popularMangaContainer.querySelectorAll('div.manga-cover-page')) //MAXELEMENTS = 12;
 
     function responsivePopularManga (event) {
-      let numberOfCoverPageShown = Math.floor( parseFloat(window.getComputedStyle(popularMangaContainer).width) / 130 );
+      let numberOfCoverPageShown = Math.floor( (parseFloat(window.getComputedStyle(popularMangaContainer).width) - 0)/ 130 );
 
       //Delete current children
       while( popularMangaContainer.firstChild ) {

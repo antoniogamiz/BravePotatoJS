@@ -61,11 +61,11 @@ body {
 
 #popular-manga-cover-page-container {
   display: flex;
-  background-color: #091416;
+  background: url(/images/tile1.png);
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 200px;
+  border: 1px solid green;
 }
 
 /* ================= manga-cover-page =================*/
