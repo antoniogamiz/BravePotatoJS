@@ -12,9 +12,27 @@ populars.fill( {
   url: "#"
 }, 0, populars.length );
 
+let manga = new Array(12);
+
+let c = {
+  name: "Chapter 34",
+  releaseDate: "5 hour ago",
+  url: "#"
+}
+
+manga.fill( {
+  mangaTitle: "Seirei no Moribito",
+  coverPath: "/images/mini-cover-page-test.jpg",
+  lastChapterList: [c, c, c, c, c],
+  url: "#"
+}, 0, manga.length);
+
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', {mangaCoverPages: populars} );
+  res.render('index', { 
+    mangaCoverPages: populars,
+    latestMangaReleases: manga
+  });
 });
 
 module.exports = router;

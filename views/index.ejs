@@ -9,7 +9,7 @@
 </head>
 <body>
   <!-- navbar -->
-  <div class="" id="navbar">
+  <div id="navbar">
     <ul>
       <li><a href="#">Home</a></li>
       <li><a href="#">Latest Manga</a></li>
@@ -17,7 +17,6 @@
       <li><a href="#">New Manga</a></li>
       <li><a href="#">Completed Manga</a></li>
       <li><a href="#">Read Light Novel</a></li>
-      <li id="icon-page-navbar"><a href="#">Doragon Manga :D</a></li>
     </ul>
   </div>
 
@@ -31,10 +30,10 @@
       <% for(let i=0; i<mangaCoverPages.length; i++) { %>
         <div class="manga-cover-page">
         <img src="<%= mangaCoverPages[i].coverPath %>" alt="cover-page">
-        <div id="title-chapter-manga-cover-page">
-          <h4 id="manga-title"><%= mangaCoverPages[i].mangaTitle %></h4>
-          <h4 id="manga-chapter"><%= mangaCoverPages[i].lastChapter %></h4>
-          <div id="go-to-manga-buttom">
+        <div class="title-chapter-manga-cover-page">
+          <h4 class="manga-title"><%= mangaCoverPages[i].mangaTitle %></h4>
+          <h4 class="manga-chapter"><%= mangaCoverPages[i].lastChapter %></h4>
+          <div class="go-to-manga-buttom">
             <a href="<%= mangaCoverPages[i].url %>"><img src="/icons/right-arrow-circular-button.png" alt="arrow-button"></a>
           </div>
         </div>
@@ -55,378 +54,21 @@
       </div>
       <!-- single manga view -->
       <div id="latest-manga-view-container">
-        <div id="latest-manga-view">
-          <img src="/images/mini-cover-page-test.jpg" alt="cover-page">
-          <div id="chapter-list">          
-            <a id="manga-title-view"href="#">Seirei no Moribito</a>
-            <div id="chapter-prompt">
-              <img src="/icons/greater.png" alt="greate-icon">
-              <a href="#" id="chapter-number">Chapter 34</a>
-              <h6 id="chapter-release-date">5 hour ago</h6>
-            </div>
-            <div id="chapter-prompt">
-              <img src="/icons/greater.png" alt="greate-icon">
-              <a href="#" id="chapter-number">Chapter 34</a>
-              <h6 id="chapter-release-date">5 hour ago</h6>
-            </div> 
-            <div id="chapter-prompt">
-              <img src="/icons/greater.png" alt="greate-icon">
-              <a href="#" id="chapter-number">Chapter 34</a>
-              <h6 id="chapter-release-date">5 hour ago</h6>
-            </div> 
-            <div id="chapter-prompt">
-              <img src="/icons/greater.png" alt="greate-icon">
-              <a href="#" id="chapter-number">Chapter 34</a>
-              <h6 id="chapter-release-date">5 hour ago</h6>
-            </div> 
-            <div id="chapter-prompt">
-              <img src="/icons/greater.png" alt="greate-icon">
-              <a href="#" id="chapter-number">Chapter 34</a>
-              <h6 id="chapter-release-date">5 hour ago</h6>
-            </div> 
+      <% for(let i=0; i<latestMangaReleases.length; i++) { %>
+        <div class="latest-manga-view">
+        <img src="<%= latestMangaReleases[i].coverPath %>" alt="cover-page">
+        <div class="chapter-list">          
+          <a class="manga-title-view"href="#"><%= latestMangaReleases[i].mangaTitle %></a>
+          <% for(let j=0; j<latestMangaReleases[i].lastChapterList.length; j++) { %>
+          <div class="chapter-prompt">
+            <img src="/icons/greater.png" alt="greate-icon">
+            <a href="latestMangaReleases[i].lastChapterList[j].url" class="chapter-number"><%=latestMangaReleases[i].lastChapterList[j].name%></a>
+            <h6 class="chapter-release-date"><%=latestMangaReleases[i].lastChapterList[j].releaseDate%></h6>
           </div>
-        </div>
-        <div id="latest-manga-view">
-          <img src="/images/mini-cover-page-test.jpg" alt="cover-page">
-          <div id="chapter-list">          
-          <a id="manga-title-view"href="#">Seirei no Moribito</a>
-          <div id="chapter-prompt">
-            <img src="/icons/greater.png" alt="greate-icon">
-            <a href="#" id="chapter-number">Chapter 34</a>
-            <h6 id="chapter-release-date">5 hour ago</h6>
-          </div>
-          <div id="chapter-prompt">
-            <img src="/icons/greater.png" alt="greate-icon">
-            <a href="#" id="chapter-number">Chapter 34</a>
-            <h6 id="chapter-release-date">5 hour ago</h6>
-          </div> 
-          <div id="chapter-prompt">
-            <img src="/icons/greater.png" alt="greate-icon">
-            <a href="#" id="chapter-number">Chapter 34</a>
-            <h6 id="chapter-release-date">5 hour ago</h6>
-          </div> 
-          <div id="chapter-prompt">
-            <img src="/icons/greater.png" alt="greate-icon">
-            <a href="#" id="chapter-number">Chapter 34</a>
-            <h6 id="chapter-release-date">5 hour ago</h6>
-          </div> 
-          <div id="chapter-prompt">
-            <img src="/icons/greater.png" alt="greate-icon">
-            <a href="#" id="chapter-number">Chapter 34</a>
-            <h6 id="chapter-release-date">5 hour ago</h6>
-          </div> 
+          <% } %>
         </div>
       </div>
-      <div id="latest-manga-view">
-        <img src="/images/mini-cover-page-test.jpg" alt="cover-page">
-        <div id="chapter-list">          
-          <a id="manga-title-view"href="#">Seirei no Moribito</a>
-          <div id="chapter-prompt">
-            <img src="/icons/greater.png" alt="greate-icon">
-            <a href="#" id="chapter-number">Chapter 34</a>
-            <h6 id="chapter-release-date">5 hour ago</h6>
-          </div>
-          <div id="chapter-prompt">
-            <img src="/icons/greater.png" alt="greate-icon">
-            <a href="#" id="chapter-number">Chapter 34</a>
-            <h6 id="chapter-release-date">5 hour ago</h6>
-          </div> 
-          <div id="chapter-prompt">
-            <img src="/icons/greater.png" alt="greate-icon">
-            <a href="#" id="chapter-number">Chapter 34</a>
-            <h6 id="chapter-release-date">5 hour ago</h6>
-          </div> 
-          <div id="chapter-prompt">
-            <img src="/icons/greater.png" alt="greate-icon">
-            <a href="#" id="chapter-number">Chapter 34</a>
-            <h6 id="chapter-release-date">5 hour ago</h6>
-          </div> 
-          <div id="chapter-prompt">
-            <img src="/icons/greater.png" alt="greate-icon">
-            <a href="#" id="chapter-number">Chapter 34</a>
-            <h6 id="chapter-release-date">5 hour ago</h6>
-          </div> 
-        </div>
-      </div>
-      <div id="latest-manga-view">
-        <img src="/images/mini-cover-page-test.jpg" alt="cover-page">
-        <div id="chapter-list">          
-          <a id="manga-title-view"href="#">Seirei no Moribito</a>
-          <div id="chapter-prompt">
-            <img src="/icons/greater.png" alt="greate-icon">
-            <a href="#" id="chapter-number">Chapter 34</a>
-            <h6 id="chapter-release-date">5 hour ago</h6>
-          </div>
-          <div id="chapter-prompt">
-            <img src="/icons/greater.png" alt="greate-icon">
-            <a href="#" id="chapter-number">Chapter 34</a>
-            <h6 id="chapter-release-date">5 hour ago</h6>
-          </div> 
-          <div id="chapter-prompt">
-            <img src="/icons/greater.png" alt="greate-icon">
-            <a href="#" id="chapter-number">Chapter 34</a>
-            <h6 id="chapter-release-date">5 hour ago</h6>
-          </div> 
-          <div id="chapter-prompt">
-            <img src="/icons/greater.png" alt="greate-icon">
-            <a href="#" id="chapter-number">Chapter 34</a>
-            <h6 id="chapter-release-date">5 hour ago</h6>
-          </div> 
-          <div id="chapter-prompt">
-            <img src="/icons/greater.png" alt="greate-icon">
-            <a href="#" id="chapter-number">Chapter 34</a>
-            <h6 id="chapter-release-date">5 hour ago</h6>
-          </div> 
-        </div>
-      </div>
-      <div id="latest-manga-view">
-        <img src="/images/mini-cover-page-test.jpg" alt="cover-page">
-        <div id="chapter-list">          
-          <a id="manga-title-view"href="#">Seirei no Moribito</a>
-          <div id="chapter-prompt">
-            <img src="/icons/greater.png" alt="greate-icon">
-            <a href="#" id="chapter-number">Chapter 34</a>
-            <h6 id="chapter-release-date">5 hour ago</h6>
-          </div>
-          <div id="chapter-prompt">
-            <img src="/icons/greater.png" alt="greate-icon">
-            <a href="#" id="chapter-number">Chapter 34</a>
-            <h6 id="chapter-release-date">5 hour ago</h6>
-          </div> 
-          <div id="chapter-prompt">
-            <img src="/icons/greater.png" alt="greate-icon">
-            <a href="#" id="chapter-number">Chapter 34</a>
-            <h6 id="chapter-release-date">5 hour ago</h6>
-          </div> 
-          <div id="chapter-prompt">
-            <img src="/icons/greater.png" alt="greate-icon">
-            <a href="#" id="chapter-number">Chapter 34</a>
-            <h6 id="chapter-release-date">5 hour ago</h6>
-          </div> 
-          <div id="chapter-prompt">
-            <img src="/icons/greater.png" alt="greate-icon">
-            <a href="#" id="chapter-number">Chapter 34</a>
-            <h6 id="chapter-release-date">5 hour ago</h6>
-          </div> 
-        </div>
-      </div>
-      <div id="latest-manga-view">
-        <img src="/images/mini-cover-page-test.jpg" alt="cover-page">
-        <div id="chapter-list">          
-          <a id="manga-title-view"href="#">Seirei no Moribito</a>
-          <div id="chapter-prompt">
-            <img src="/icons/greater.png" alt="greate-icon">
-            <a href="#" id="chapter-number">Chapter 34</a>
-            <h6 id="chapter-release-date">5 hour ago</h6>
-          </div>
-          <div id="chapter-prompt">
-            <img src="/icons/greater.png" alt="greate-icon">
-            <a href="#" id="chapter-number">Chapter 34</a>
-            <h6 id="chapter-release-date">5 hour ago</h6>
-          </div> 
-          <div id="chapter-prompt">
-            <img src="/icons/greater.png" alt="greate-icon">
-            <a href="#" id="chapter-number">Chapter 34</a>
-            <h6 id="chapter-release-date">5 hour ago</h6>
-          </div> 
-          <div id="chapter-prompt">
-            <img src="/icons/greater.png" alt="greate-icon">
-            <a href="#" id="chapter-number">Chapter 34</a>
-            <h6 id="chapter-release-date">5 hour ago</h6>
-          </div> 
-          <div id="chapter-prompt">
-            <img src="/icons/greater.png" alt="greate-icon">
-            <a href="#" id="chapter-number">Chapter 34</a>
-            <h6 id="chapter-release-date">5 hour ago</h6>
-          </div> 
-        </div>
-      </div>
-      <div id="latest-manga-view">
-        <img src="/images/mini-cover-page-test.jpg" alt="cover-page">
-        <div id="chapter-list">          
-          <a id="manga-title-view"href="#">Seirei no Moribito</a>
-          <div id="chapter-prompt">
-            <img src="/icons/greater.png" alt="greate-icon">
-            <a href="#" id="chapter-number">Chapter 34</a>
-            <h6 id="chapter-release-date">5 hour ago</h6>
-          </div>
-          <div id="chapter-prompt">
-            <img src="/icons/greater.png" alt="greate-icon">
-            <a href="#" id="chapter-number">Chapter 34</a>
-            <h6 id="chapter-release-date">5 hour ago</h6>
-          </div> 
-          <div id="chapter-prompt">
-            <img src="/icons/greater.png" alt="greate-icon">
-            <a href="#" id="chapter-number">Chapter 34</a>
-            <h6 id="chapter-release-date">5 hour ago</h6>
-          </div> 
-          <div id="chapter-prompt">
-            <img src="/icons/greater.png" alt="greate-icon">
-            <a href="#" id="chapter-number">Chapter 34</a>
-            <h6 id="chapter-release-date">5 hour ago</h6>
-          </div> 
-          <div id="chapter-prompt">
-            <img src="/icons/greater.png" alt="greate-icon">
-            <a href="#" id="chapter-number">Chapter 34</a>
-            <h6 id="chapter-release-date">5 hour ago</h6>
-          </div> 
-        </div>
-      </div>
-      <div id="latest-manga-view">
-        <img src="/images/mini-cover-page-test.jpg" alt="cover-page">
-        <div id="chapter-list">          
-          <a id="manga-title-view"href="#">Seirei no Moribito</a>
-          <div id="chapter-prompt">
-            <img src="/icons/greater.png" alt="greate-icon">
-            <a href="#" id="chapter-number">Chapter 34</a>
-            <h6 id="chapter-release-date">5 hour ago</h6>
-          </div>
-          <div id="chapter-prompt">
-            <img src="/icons/greater.png" alt="greate-icon">
-            <a href="#" id="chapter-number">Chapter 34</a>
-            <h6 id="chapter-release-date">5 hour ago</h6>
-          </div> 
-          <div id="chapter-prompt">
-            <img src="/icons/greater.png" alt="greate-icon">
-            <a href="#" id="chapter-number">Chapter 34</a>
-            <h6 id="chapter-release-date">5 hour ago</h6>
-          </div> 
-          <div id="chapter-prompt">
-            <img src="/icons/greater.png" alt="greate-icon">
-            <a href="#" id="chapter-number">Chapter 34</a>
-            <h6 id="chapter-release-date">5 hour ago</h6>
-          </div> 
-          <div id="chapter-prompt">
-            <img src="/icons/greater.png" alt="greate-icon">
-            <a href="#" id="chapter-number">Chapter 34</a>
-            <h6 id="chapter-release-date">5 hour ago</h6>
-          </div> 
-        </div>
-      </div>
-      <div id="latest-manga-view">
-        <img src="/images/mini-cover-page-test.jpg" alt="cover-page">
-        <div id="chapter-list">          
-          <a id="manga-title-view"href="#">Seirei no Moribito</a>
-          <div id="chapter-prompt">
-            <img src="/icons/greater.png" alt="greate-icon">
-            <a href="#" id="chapter-number">Chapter 34</a>
-            <h6 id="chapter-release-date">5 hour ago</h6>
-          </div>
-          <div id="chapter-prompt">
-            <img src="/icons/greater.png" alt="greate-icon">
-            <a href="#" id="chapter-number">Chapter 34</a>
-            <h6 id="chapter-release-date">5 hour ago</h6>
-          </div> 
-          <div id="chapter-prompt">
-            <img src="/icons/greater.png" alt="greate-icon">
-            <a href="#" id="chapter-number">Chapter 34</a>
-            <h6 id="chapter-release-date">5 hour ago</h6>
-          </div> 
-          <div id="chapter-prompt">
-            <img src="/icons/greater.png" alt="greate-icon">
-            <a href="#" id="chapter-number">Chapter 34</a>
-            <h6 id="chapter-release-date">5 hour ago</h6>
-          </div> 
-          <div id="chapter-prompt">
-            <img src="/icons/greater.png" alt="greate-icon">
-            <a href="#" id="chapter-number">Chapter 34</a>
-            <h6 id="chapter-release-date">5 hour ago</h6>
-          </div> 
-        </div>
-      </div>
-      <div id="latest-manga-view">
-        <img src="/images/mini-cover-page-test.jpg" alt="cover-page">
-        <div id="chapter-list">          
-          <a id="manga-title-view"href="#">Seirei no Moribito</a>
-          <div id="chapter-prompt">
-            <img src="/icons/greater.png" alt="greate-icon">
-            <a href="#" id="chapter-number">Chapter 34</a>
-            <h6 id="chapter-release-date">5 hour ago</h6>
-          </div>
-          <div id="chapter-prompt">
-            <img src="/icons/greater.png" alt="greate-icon">
-            <a href="#" id="chapter-number">Chapter 34</a>
-            <h6 id="chapter-release-date">5 hour ago</h6>
-          </div> 
-          <div id="chapter-prompt">
-            <img src="/icons/greater.png" alt="greate-icon">
-            <a href="#" id="chapter-number">Chapter 34</a>
-            <h6 id="chapter-release-date">5 hour ago</h6>
-          </div> 
-          <div id="chapter-prompt">
-            <img src="/icons/greater.png" alt="greate-icon">
-            <a href="#" id="chapter-number">Chapter 34</a>
-            <h6 id="chapter-release-date">5 hour ago</h6>
-          </div> 
-          <div id="chapter-prompt">
-            <img src="/icons/greater.png" alt="greate-icon">
-            <a href="#" id="chapter-number">Chapter 34</a>
-            <h6 id="chapter-release-date">5 hour ago</h6>
-          </div> 
-        </div>
-      </div>
-      <div id="latest-manga-view">
-        <img src="/images/mini-cover-page-test.jpg" alt="cover-page">
-        <div id="chapter-list">          
-          <a id="manga-title-view"href="#">Seirei no Moribito</a>
-          <div id="chapter-prompt">
-            <img src="/icons/greater.png" alt="greate-icon">
-            <a href="#" id="chapter-number">Chapter 34</a>
-            <h6 id="chapter-release-date">5 hour ago</h6>
-          </div>
-          <div id="chapter-prompt">
-            <img src="/icons/greater.png" alt="greate-icon">
-            <a href="#" id="chapter-number">Chapter 34</a>
-            <h6 id="chapter-release-date">5 hour ago</h6>
-          </div> 
-          <div id="chapter-prompt">
-            <img src="/icons/greater.png" alt="greate-icon">
-            <a href="#" id="chapter-number">Chapter 34</a>
-            <h6 id="chapter-release-date">5 hour ago</h6>
-          </div> 
-          <div id="chapter-prompt">
-            <img src="/icons/greater.png" alt="greate-icon">
-            <a href="#" id="chapter-number">Chapter 34</a>
-            <h6 id="chapter-release-date">5 hour ago</h6>
-          </div> 
-          <div id="chapter-prompt">
-            <img src="/icons/greater.png" alt="greate-icon">
-            <a href="#" id="chapter-number">Chapter 34</a>
-            <h6 id="chapter-release-date">5 hour ago</h6>
-          </div> 
-        </div>
-      </div>
-      <div id="latest-manga-view">
-        <img src="/images/mini-cover-page-test.jpg" alt="cover-page">
-        <div id="chapter-list">          
-          <a id="manga-title-view"href="#">Seirei no Moribito</a>
-          <div id="chapter-prompt">
-            <img src="/icons/greater.png" alt="greate-icon">
-            <a href="#" id="chapter-number">Chapter 34</a>
-            <h6 id="chapter-release-date">5 hour ago</h6>
-          </div>
-          <div id="chapter-prompt">
-            <img src="/icons/greater.png" alt="greate-icon">
-            <a href="#" id="chapter-number">Chapter 34</a>
-            <h6 id="chapter-release-date">5 hour ago</h6>
-          </div> 
-          <div id="chapter-prompt">
-            <img src="/icons/greater.png" alt="greate-icon">
-            <a href="#" id="chapter-number">Chapter 34</a>
-            <h6 id="chapter-release-date">5 hour ago</h6>
-          </div> 
-          <div id="chapter-prompt">
-            <img src="/icons/greater.png" alt="greate-icon">
-            <a href="#" id="chapter-number">Chapter 34</a>
-            <h6 id="chapter-release-date">5 hour ago</h6>
-          </div> 
-          <div id="chapter-prompt">
-            <img src="/icons/greater.png" alt="greate-icon">
-            <a href="#" id="chapter-number">Chapter 34</a>
-            <h6 id="chapter-release-date">5 hour ago</h6>
-          </div> 
-        </div>
-      </div>
+      <% } %>
       </div>
     </div>
     

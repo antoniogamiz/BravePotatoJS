@@ -36,10 +36,6 @@ body {
   background-color: #111;
 }
 
-#icon-page-navbar {
-  /* HAY QUE PONER EL ICONO A LA DERECHA */
-}
-
 /* ================= header popular-manga-container =================*/
 
 .header-popular-manga {
@@ -85,7 +81,7 @@ body {
   height: 100%;
 }
 
-#title-chapter-manga-cover-page {
+.title-chapter-manga-cover-page {
   position: absolute;
   background-color: rgba(0,0,0,0.7);
   color: white;
@@ -95,7 +91,7 @@ body {
   bottom: 0;
 }
 
-#title-chapter-manga-cover-page h4 {
+.title-chapter-manga-cover-page h4 {
   margin:0;
   margin-top: 2px;
   margin-left: 5px;
@@ -106,16 +102,16 @@ body {
   width: 75%;
 }
 
-#manga-title {
+.manga-title {
   font-size: 12px;
   color: #059e9a;
 }
 
-#manga-chapter {
+.manga-chapter {
   font-size: 10px;
 }
 
-#go-to-manga-buttom {
+.go-to-manga-buttom {
   position: absolute;
   width: 16px;
   height: 16px;
@@ -185,7 +181,7 @@ body {
 
 /* ================= latest-manga-view =================*/
 
-#latest-manga-view {
+.latest-manga-view {
   display: grid;
   grid-template-columns: 90px 200px;
   /* border: 1px solid red; */
@@ -194,19 +190,19 @@ body {
   padding: 10px;
 }
 
-#latest-manga-view > img {
+.latest-manga-view > img {
   width: 90px;
   height: 140px;
 }
 
-#manga-title-view {
+.manga-title-view {
   text-decoration: none;
   color: #059e9a;
   padding-left: 10px;
   font-size: 12px;
 }
 
-#chapter-prompt {
+.chapter-prompt {
   display: flex;
   align-items: center;
   width: 200px;
@@ -214,20 +210,20 @@ body {
   padding: 4px 0;
 }
 
-#chapter-prompt > img {
+.chapter-prompt > img {
   width: 10px;
   height: 10px;
   padding: 0 7px;
 }
 
-#chapter-number {
+.chapter-number {
   font-size: 11px;
   margin: 0;
   text-decoration: none;
   color: black;
 }
 
-#chapter-release-date {
+.chapter-release-date {
   font-size: 8px;
   margin: 0;
   padding-left: 60px;
