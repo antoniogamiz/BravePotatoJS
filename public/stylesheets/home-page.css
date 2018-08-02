@@ -1,39 +1,84 @@
+:root {
+  --black-color: #202124;
+  --violet: #7F00FF;
+  --electric-violet: #8F00FF;
+  --vivid-violet: #9F00FF;
+  --web-violet: #EE82EE;
+  --dark-violet: #9400D3;
+  --mauve: #E0B0FF;
+  --lavander: #B57EDC;
+}
+
 body {
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  background-color: #cccccc;
-  margin: 0 8%;
+  font: 14px "Arial", Helvetica, Arial, sans-serif;
+  /* background-color: white; */
+  /* background: url(/images/bg.jpg); */
+  background-color: #ccc;
+  margin: 0;
 }
 
 /* ================= navbar =================*/
 
 #navbar ul {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
   list-style-type: none;
   margin: 0;
   padding: 0;
-  width: 100%;
   overflow: hidden;
-  background-color: #333;
-  margin: 0;
+  background-color: var(--black-color);
 }
 
-#navbar li {
-  float: left;
+#navbar ul > :first-child {
+  margin-left: 5%;
 }
 
-#icon-page-navbar {
-  float: right;
-}
-
-#navbar li a {
+#navbar li .entry {
   display: block;
   color: white;
   text-align: center;
-  padding: 14px 16px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 28px;
+}
+
+#navbar .active {
+  border-bottom: 5px solid white;  
+} 
+
+#navbar li .entry:hover {
+  background-color: var(--lavander);
+  text-shadow: 4px 4px 10px black;
+}
+
+#logo {
+  display: flex;
+  align-content: center;
+  justify-content: start;
+  margin: auto;
+}
+
+#logo a {
   text-decoration: none;
 }
 
-#navbar li a:hover {
-  background-color: #111;
+
+#main-icon {
+  width: 50px;
+  height: 50px;
+}
+
+#main-title {
+  width: 350px;
+  height: 50px;
+}
+
+/* ================= main container =================*/
+
+#main-container {
+  margin: 0 8%;
 }
 
 /* ================= header popular-manga-container =================*/
@@ -65,7 +110,6 @@ body {
   align-items: center;
   justify-content: center;
   width: 100%;
-  border: 1px solid green;
 }
 
 /* ================= manga-cover-page =================*/

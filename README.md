@@ -1,8 +1,15 @@
 ### DoragonManga
 
-### Templates: 
 
-#### Home
+### Resources Used: 
+
+* Shades of violet: [violets](https://en.wikipedia.org/wiki/Shades_of_violet).
+* https://www.flaticon.com/free-icon/dragon_982829
+* https://www.font-generator.com/
+
+### Templates EJS:
+
+#### Home Container
 
 ~~~
 { mangaCoverPages: [], latestMangReleases: [] }
