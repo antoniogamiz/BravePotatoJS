@@ -3,7 +3,7 @@ var router = express.Router();
 
 // TEMPORAL
 
-let populars = new Array(11);
+let populars = new Array(9);
 
 populars.fill( {
   mangaTitle: "One Piece",

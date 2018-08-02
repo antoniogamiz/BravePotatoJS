@@ -116,7 +116,7 @@
     const allCoverPages = ([]).slice.call(popularMangaContainer.querySelectorAll('div.manga-cover-page')) //MAXELEMENTS = 12;
 
     function responsivePopularManga (event) {
-      let numberOfCoverPageShown = Math.floor(parseFloat(window.getComputedStyle(popularMangaContainer).width)/ 130 ) - 1;
+      let numberOfCoverPageShown = Math.floor(parseFloat(window.getComputedStyle(popularMangaContainer).width)/ 130 ) - 0;
 
       //Delete current children
       while( popularMangaContainer.firstChild ) {
