@@ -12,6 +12,9 @@ In this repository I'm going to upload all the code I type as well as all the te
 * **Green**: rgb(146,203,12)
 * **Light grey**: rgb(195,195,195)
 * **Darker grey**: rgb(25,25,25)
+* **Water blue**: rgb(26,162,147)
+* **Light blue**: rgb(26,162,196)
+  
 ### Resources links:
 
 * https://www.flaticon.com/
