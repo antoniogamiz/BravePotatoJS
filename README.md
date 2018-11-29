@@ -6,6 +6,12 @@ This is a personal project without a deadline. I dont know a lot about web desig
 
 In this repository I'm going to upload all the code I type as well as all the tech information I need to make this web page true. And one day, in the close future, I strongly wish that you find here an easy, free and open-source way to make your own manga web page :).
 
+
+### Interesting Colors
+
+* **Green**: rgb(146,203,12)
+* **Light grey**: rgb(195,195,195)
+* **Darker grey**: rgb(25,25,25)
 ### Resources links:
 
 * https://www.flaticon.com/
