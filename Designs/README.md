@@ -40,3 +40,6 @@ To avoid misplaceing, click on the **lock icon** situated in the top left corner
 
 It allows you to **align elements quickly**, relative to a specific feauture. As follows, you can align them relative to the page, relative to the order of selecting or to the bigger and smaller object. What is more, this tool will help you set the equal distances between multiples objects. To use this tool and make your designs as neat as a pin, go to `Object`->`Align and Distribute`.
 
+#### Clipping
+
+Setting Masks and Clips comes in handy when you need an image of a particular size or shape. How can you achieve that? Choose an image you lika and draw a shape over the part you prefer to be visible. Select both the image and the shape and click `Object`->`Clip`->`Set`. If you are going to use this to make text, it will need to be converted to Path first. Select the text, click `Path`->`Object to Path` and apply the method described above.
