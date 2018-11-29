@@ -5,3 +5,7 @@ This is a personal project without deadline. I dont know a lot about web design,
 # Contents
 
 In this repository I'm going to upload all the code I type as well as all the tech information I need to make this web page true :D!.
+
+# Milestones:
+
+This section will hold little milestones that I will have to complete... some day...maybe tomorrow...or not...
