@@ -23,3 +23,14 @@ In this repository I'm going to upload all the code I type as well as all the te
 ### Milestones:
 
 This section will hold little milestones that I will have to complete... some day...maybe tomorrow...or not...
+
+#### Short term milestones:
+
+* Learn Inkscape basics.
+* Learn React basics.
+* Learn NodeJS basics.
+* Make a initial design.
+
+##### Long term milestones
+
+* Integrate facebook comments plugin: https://developers.facebook.com/docs/plugins/comments/
