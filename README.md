@@ -30,6 +30,7 @@ This section will hold little milestones that I will have to complete... some da
 * Learn React basics.
 * Learn NodeJS basics.
 * Make a initial design.
+* Learn what manifest.json actually does.
 
 ##### Long term milestones
 
