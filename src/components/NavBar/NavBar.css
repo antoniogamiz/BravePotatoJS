@@ -1,0 +1,14 @@
+.NavBar {
+    background-color: black;
+    width: 100%;
+    height: 50px;
+    color: white;
+    padding: 0px 200px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.NavBar-logo {
+    height: 100%;
+    justify-self: flex-start;
+}

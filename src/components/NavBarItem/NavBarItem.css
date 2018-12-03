@@ -1,0 +1,23 @@
+.NavBar-item {
+    display: flex;
+    margin: 5px 80px;
+    font-size: 19px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.NavBar-item a {
+    align-self: center;
+    padding: 0 10px;
+    color: inherit;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+}
+
+.NavBar-item:hover {
+    color: black;
+    background: rgb(195,195,195);
+    border-bottom: 5px solid rgb(26,162,147);
+}

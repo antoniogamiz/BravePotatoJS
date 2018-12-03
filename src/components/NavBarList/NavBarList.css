@@ -1,0 +1,9 @@
+.NavBar-item-list {
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+    background-color: inherit;
+    display: flex;
+    justify-content: space-between;
+}

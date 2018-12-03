@@ -1,0 +1,10 @@
+import React from 'react';
+import './NavBar.css';
+import NavBarList from '../NavBarList/NavBarList';
+
+export default ({imgLogo, items}) => (
+      <nav className="NavBar">
+        <img className="NavBar-logo" src={imgLogo} alt=""></img>
+        <NavBarList items={items} />
+      </nav>
+);
