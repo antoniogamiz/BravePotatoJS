@@ -6,17 +6,15 @@ import logo from './img/logo.png';
 
 import NavBarMenuEntry from './components/NavBarMenuEntry/NavBarMenuEntry'
 
-import SearchLoupe from './components/SearchLoupe/SearchLoupe'
+import Search from './components/Search/Search'
 import searchLogo from './img/search-logo.svg'
 
 let a = [ 
   NavBarMenuEntry( { url: "#", text: "HOME" } ),
   NavBarMenuEntry( { url: "#", text: "LATEST MANGA" } ),
   NavBarMenuEntry( { url: "#", text: "COMPLETED MANGA" } ),
-  <SearchLoupe src={searchLogo}/>
+  <Search src={searchLogo}/>
 ]
-
-console.log( a[0] )
 
 class App extends Component {
   render() {
