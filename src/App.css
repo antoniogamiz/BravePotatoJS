@@ -1,4 +1,11 @@
 
 body {
   background-color: rgb(195,195,195);
+  height: 100%;
+}
+
+.container {
+  margin: 0 250px;
+  border: 1px solid red;
+  height: 100%;
 }

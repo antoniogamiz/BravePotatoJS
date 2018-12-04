@@ -7,3 +7,12 @@
     display: flex;
     justify-content: space-between;
 }
+
+.NavBar-item {
+    display: flex;
+}
+
+.NavBar-item * {
+    align-self: center;
+    vertical-align: middle;
+}
