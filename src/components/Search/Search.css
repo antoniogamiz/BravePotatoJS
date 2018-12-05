@@ -1,25 +1,25 @@
-.Search .SearchItem img {
-    height: 30px;
-    width: 30px;
+.Search__Item img {
+    height: 20px;
+    width: 20px;
 }
 
-.fade-enter {
+.scrollingDown-enter {
     opacity: 0.01;
     top: 0px;
 }
   
-.fade-enter.fade-enter-active {
+.scrollingDown-enter.scrollingDown-enter-active {
     opacity: 1;
     transform: translateY(50px);
     transition: opacity 500ms ease-in, transform 500ms ease-in;
 }
   
-.fade-leave {
+.scrollingDown-leave {
     opacity: 1;
     top: 50x;
 }
 
-.fade-leave.fade-leave-active {
+.scrollingDown-leave.scrollingDown-leave-active {
     opacity: 0.01;
     transform: translateY(-50px);
     transition: opacity 500ms ease-in, transform 500ms ease-in;

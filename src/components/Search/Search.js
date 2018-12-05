@@ -23,14 +23,14 @@ class Search extends Component {
         const { show } = this.state;
         return (
             <div className="Search">
-                <a  onClick={this.onClick} className="SearchItem" href="#">
+                <a  onClick={this.onClick} className="Search__Item" href="#">
                     <img src={src} alt=""></img>
                 </a>
                 <ReactCSSTransitionGroup
-                    transitionName="fade"
+                    transitionName="scrollingDown"
                     transitionEnterTimeout={500}
                     transitionLeaveTimeout={500}>
-                    {show ? <SearchBar className="SearchBar"/> : ""}
+                    {show ? <SearchBar/> : ""}
                 </ReactCSSTransitionGroup>
             </div>
 

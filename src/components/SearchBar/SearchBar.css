@@ -14,13 +14,13 @@
     z-index: -1;
 }
 
-.SearchBar img {
+.SearchBar__Icon {
     margin: 0 20px;
     width: 25px;
     height: 25px;
 }
 
-.SearchBar input[type=text] {
+.SearchBar__Input {
     font-size: 14px;
     color: #5a6674;
     width: 80%;
@@ -29,7 +29,7 @@
     outline: none;
 }
 
-.SearchBar p {
+.SearchBar_Tags {
     border-left: 2px solid #5a6674;
     padding: 0 10px;
     color: #5a5a5a;
