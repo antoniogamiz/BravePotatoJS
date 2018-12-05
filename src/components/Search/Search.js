@@ -24,8 +24,8 @@ class Search extends Component {
         return (
             <div className="Search">
                 { /* eslint-disable-next-line */ }
-                <a  onClick={this.onClick} className="Search__Item" href="#">
-                    <img src={src} alt=""></img>
+                <a  onClick={this.onClick} href="#">
+                    <img src={src} alt="" className="Search__ItemIcon"></img>
                 </a>
                 <ReactCSSTransitionGroup
                     transitionName="scrollingDown"
