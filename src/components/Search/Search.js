@@ -23,6 +23,7 @@ class Search extends Component {
         const { show } = this.state;
         return (
             <div className="Search">
+                { /* eslint-disable-next-line */ }
                 <a  onClick={this.onClick} className="Search__Item" href="#">
                     <img src={src} alt=""></img>
                 </a>

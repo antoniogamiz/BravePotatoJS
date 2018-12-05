@@ -5,12 +5,12 @@
 
 .scrollingDown-enter {
     opacity: 0.01;
-    top: 0px;
+    transform: translateY(-50px);
 }
   
 .scrollingDown-enter.scrollingDown-enter-active {
     opacity: 1;
-    transform: translateY(50px);
+    transform: translateY(0px);
     transition: opacity 500ms ease-in, transform 500ms ease-in;
 }
   

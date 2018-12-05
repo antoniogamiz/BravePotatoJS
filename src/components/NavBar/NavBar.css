@@ -7,7 +7,7 @@
     justify-content: flex-start;
 }
 
-.NavBar-logo {
+.NavBar__Logo {
     height: 100%;
     justify-self: flex-start;
 }

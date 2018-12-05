@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
-import { Fragment } from 'react';
 
 import './NavBar.css';
 import NavBarList from '../NavBarList/NavBarList';
-import SearchBar from '../SearchBar/SearchBar'
 import Search from '../Search/Search'
 
 class NavBar extends Component {
@@ -18,12 +16,10 @@ class NavBar extends Component {
     ]
     
     return (
-      <Fragment>
         <nav className="NavBar">
-          <img className="NavBar-logo" src={imgLogo} alt=""></img>
+          <img className="NavBar__Logo" src={imgLogo} alt=""></img>
           <NavBarList items={items} />
         </nav>
-      </Fragment>
     );   
   }
 }
