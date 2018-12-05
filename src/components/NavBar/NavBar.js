@@ -8,7 +8,7 @@ class NavBar extends Component {
   
 
   render() {
-    const { imgLogo, menuEntries, searchImg } = this.props;
+    const { imgLogo, imgLogoFont, menuEntries, searchImg } = this.props;
     
     const items = [
       ...menuEntries, 
@@ -17,7 +17,13 @@ class NavBar extends Component {
     
     return (
         <nav className="NavBar">
-          <img className="NavBar__Logo" src={imgLogo} alt=""></img>
+          <div className="NavBar__MainIcon">
+            {/* eslint-disable-next-line */}
+            <a href="#">
+              <img className="NavBar__MainIcon_Img" src={imgLogo} alt=""></img>
+              <img className="NavBar__MainIcon_Img" src={imgLogoFont} alt=""></img>          
+            </a>
+          </div>
           <NavBarList items={items} />
         </nav>
     );   
