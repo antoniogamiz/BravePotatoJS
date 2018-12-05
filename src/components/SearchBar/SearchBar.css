@@ -5,13 +5,13 @@
     border-radius: 40px;
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
     background: #fff;
-    transition: all 0.3s ease;
     display: flex;
     align-items: center;
     position: absolute;
     left: 50%;
     margin-left: calc(-35%/2);
     top: 50px;
+    z-index: -1;
 }
 
 .SearchBar img {

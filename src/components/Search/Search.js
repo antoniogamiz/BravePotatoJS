@@ -1,4 +1,4 @@
-import React, {Component, Fragment} from 'react';
+import React, {Component} from 'react';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 
 import './Search.css';
@@ -22,17 +22,17 @@ class Search extends Component {
         const { src } = this.props;
         const { show } = this.state;
         return (
-            <Fragment>
-                <a  onClick={this.onClick} className="Search" href="#">
+            <div className="Search">
+                <a  onClick={this.onClick} className="SearchItem" href="#">
                     <img src={src} alt=""></img>
                 </a>
                 <ReactCSSTransitionGroup
                     transitionName="fade"
                     transitionEnterTimeout={500}
                     transitionLeaveTimeout={500}>
-                    {show ? <SearchBar/> : ""}
+                    {show ? <SearchBar className="SearchBar"/> : ""}
                 </ReactCSSTransitionGroup>
-            </Fragment>
+            </div>
 
         );
     }
