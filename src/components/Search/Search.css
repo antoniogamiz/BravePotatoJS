@@ -2,3 +2,24 @@
     height: 30px;
     width: 30px;
 }
+.fade-enter {
+    opacity: 0.01;
+    transform: translateY(-50%);
+}
+  
+.fade-enter.fade-enter-active {
+    opacity: 1;
+    transform: translateY(50%);
+    transition: all 500ms ease-in;
+}
+  
+.fade-leave {
+    opacity: 1;
+    transform: translateY(50%);
+}
+
+.fade-leave.fade-leave-active {
+    opacity: 0.01;
+    transform: translateY(-50%);
+    transition: opacity 300ms ease-in;
+}

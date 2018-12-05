@@ -3,6 +3,7 @@ import './SearchBar.css'
 import icon from '../../img/search-engine.svg'
 
 class SearchBar extends Component {
+
     render() {
         return (
             <form className="SearchBar">
