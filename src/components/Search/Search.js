@@ -29,8 +29,8 @@ class Search extends Component {
                 </a>
                 <ReactCSSTransitionGroup
                     transitionName="scrollingDown"
-                    transitionEnterTimeout={500}
-                    transitionLeaveTimeout={500}>
+                    transitionEnterTimeout={350}
+                    transitionLeaveTimeout={350}>
                     {show ? <SearchBar/> : ""}
                 </ReactCSSTransitionGroup>
             </div>

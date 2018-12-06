@@ -11,7 +11,6 @@
     left: 50%;
     margin-left: calc(-35%/2);
     top: 50px;
-    z-index: -1;
 }
 
 .SearchBar__Icon {

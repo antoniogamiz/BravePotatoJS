@@ -11,7 +11,7 @@
 .scrollingDown-enter.scrollingDown-enter-active {
     opacity: 1;
     transform: translateY(0px);
-    transition: opacity 500ms ease-in, transform 500ms ease-in;
+    transition: opacity 350ms ease-out, transform 350ms ease-out;
 }
   
 .scrollingDown-leave {
@@ -22,5 +22,5 @@
 .scrollingDown-leave.scrollingDown-leave-active {
     opacity: 0.01;
     transform: translateY(-50px);
-    transition: opacity 500ms ease-in, transform 500ms ease-in;
+    transition: opacity 350ms ease-in, transform 350ms ease-in;
 }

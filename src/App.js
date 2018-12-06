@@ -20,7 +20,9 @@ class App extends Component {
     return (
       <div className="App">
         <NavBar imgLogo={logo} imgLogoFont={logoFont} menuEntries={menuEntries} searchImg = { searchLogo }/>
-        <div className="container" ></div>
+        <div className="container" >
+          <p>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAHHHHHHHHHHHHHHHHHHHHHHHHHHHHh</p>
+        </div>
       </div>
     );
   }
