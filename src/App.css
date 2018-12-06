@@ -10,8 +10,8 @@ body {
   background-color: rgb(230, 247, 255);
 }
 
-.container {
-  margin: 0 250px;
+.MainContainer {
+  margin: 20px 350px;
   border: 1px solid red;
   height: 100%;
 }
