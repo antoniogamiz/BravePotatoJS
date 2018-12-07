@@ -8,10 +8,11 @@ body {
   background-color: rgb(230, 255, 247);
   background-color: rgb(179, 230, 255);
   background-color: rgb(230, 247, 255);
+  background-color: white;
 }
 
 .MainContainer {
-  margin: 20px 350px;
-  border: 1px solid red;
+  margin: 30px 350px;
+  /* border: 1px solid red; */
   height: 100%;
 }

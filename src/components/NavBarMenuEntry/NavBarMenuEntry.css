@@ -1,9 +1,8 @@
 
 .NavBarMenuEntry {
-    margin: 5px 60px;
-    font-size: 17px;
+    margin: 5px 45px;
+    font-size: 21px;
     color: white;
-    /* font-weight: bold; */
     cursor: pointer;
     border: 1px solid black;
     border-radius: 5px;
