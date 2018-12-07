@@ -1,15 +1,17 @@
-.NavBar__ItemsList {
+.PortraitList {
     list-style-type: none;
-    margin: 0;
+    margin: 10px 0;
     padding: 0;
     overflow: hidden;
-    background-color: inherit;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
-.NavBar__Item {
+.PortraitList__Item {
     display: flex;
     align-self: center;
     vertical-align: middle;
+    width: 143px;
+    height: 200px;
+    margin: 0 0 10px 0;
 }

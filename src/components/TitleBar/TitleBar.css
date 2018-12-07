@@ -27,7 +27,7 @@
 .TitleBar__border {
     margin-left: 5px;
     width: 100%;
-    height: 100%;
-    background-color: white;
-    border-top: 6px solid yellowgreen;
+    background-color: black;
+    border-radius: 3px;
+    border-top: 10px solid yellowgreen;
 }
