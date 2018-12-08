@@ -18,7 +18,8 @@ import mock4 from './img/mock-portrait-4.jpg';
 let menuEntries = [ 
   NavBarMenuEntry( { url: "#", text: "Home" } ),
   NavBarMenuEntry( { url: "#", text: "Latest manga" } ),
-  NavBarMenuEntry( { url: "#", text: "Completed manga" } )
+  NavBarMenuEntry( { url: "#", text: "Completed manga" } ),
+  NavBarMenuEntry( { url: "#", text: "Rankings" } )
 ];
 
 
@@ -38,9 +39,9 @@ class App extends Component {
     return (
       <div className="App">
         <NavBar imgLogo={logo} imgLogoFont={logoFont} menuEntries={menuEntries} searchImg = { searchLogo }/>
-        <div className="MainContainer">
+        {/* <div className="MainContainer">
           <PopularMangaContainer icon={popIcon} title={"Popular Manga"} portraits={portraits}/>        
-        </div>
+        </div> */}
       </div>
     );
   }

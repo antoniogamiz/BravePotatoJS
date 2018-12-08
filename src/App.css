@@ -1,3 +1,6 @@
+:root {
+  --lateral-margin: 350px;
+}
 
 body {
   background-color: rgb(192,192,192);
@@ -12,7 +15,7 @@ body {
 }
 
 .MainContainer {
-  margin: 30px 350px;
+  margin: 30px var(--lateral-margin);
   /* border: 1px solid red; */
   height: 100%;
 }

@@ -1,6 +1,7 @@
 .Search__ItemIcon {
     height: 25px;
     width: 25px;
+    padding: 10px;
 }
 
 .scrollingDown-enter {

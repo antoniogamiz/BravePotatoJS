@@ -1,0 +1,11 @@
+.NavIcon {
+    display: flex;
+    margin: 5px;
+    width: 170px;
+}
+
+.NavIcon_Img {
+    height: 35px;
+    align-self: center;
+    vertical-align: middle;
+}

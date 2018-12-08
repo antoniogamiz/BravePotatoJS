@@ -1,11 +1,12 @@
 .SearchBar {
     margin: 10px auto;
-    width: 35%;
+    width: 40%;
     height: 40px;
     border-radius: 40px;
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
     background: #fff;
     display: flex;
+    justify-content: space-between;
     align-items: center;
     position: absolute;
     left: 50%;
@@ -24,7 +25,7 @@
 .SearchBar__Input {
     font-size: 14px;
     color: #5a6674;
-    width: 80%;
+    width: 85%;
     height: 20px;
     border: none;
     outline: none;
