@@ -4,6 +4,7 @@
     background-color: yellowgreen ;
     display: flex;
     justify-content: flex-start;
+    width: 20%;
 }
 
 .TitleBar__icon {

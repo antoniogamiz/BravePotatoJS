@@ -9,7 +9,7 @@ class PopularMangaContainer extends Component {
       const {icon, title, portraits} = this.props;      
       return (
         <div className="PopularMangaContainer">
-            <TitleBar icon={icon} title={title} />
+            <TitleBar cName="PopularMangaContainer__TitleBar" icon={icon} title={title} />
             <PortraitList items={portraits}/>
         </div>  
     );   

@@ -39,7 +39,7 @@ class App extends Component {
       <div className="App">
         <NavBar imgLogo={logo} imgLogoFont={logoFont} menuEntries={menuEntries} searchImg = { searchLogo }/>
         <div className="MainContainer">
-          <PopularMangaContainer icon={popIcon} title={"Popular Manga"} portraits={portraits}/>
+          <PopularMangaContainer icon={popIcon} title={"Popular Manga"} portraits={portraits}/>        
         </div>
       </div>
     );

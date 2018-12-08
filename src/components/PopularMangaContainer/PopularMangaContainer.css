@@ -1,5 +1,9 @@
 .PopularMangaContainer {
-    background-color: black;
+    position: relative;
     /* border: 1px solid red; */
-    border-radius: 10px;
+}
+
+.PopularMangaContainer__TitleBar {
+    position: absolute;
+    top: -20px;
 }
