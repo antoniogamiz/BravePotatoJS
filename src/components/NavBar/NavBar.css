@@ -10,6 +10,7 @@
 .NavBar__MainIcon {
     display: flex;
     margin: 5px;
+    width: 170px;
 }
 
 .NavBar__MainIcon_Img {
