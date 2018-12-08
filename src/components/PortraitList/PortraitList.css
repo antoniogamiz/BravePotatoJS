@@ -11,7 +11,37 @@
     display: flex;
     align-self: center;
     vertical-align: middle;
+    margin: 0 0 10px 0;
+    position: relative;
+    transition: transform 200ms ease-in-out;
+    cursor: pointer;
+}
+
+.PortraitList__Item__Img {
     width: 143px;
     height: 200px;
-    margin: 0 0 10px 0;
+    overflow: hidden;
+}
+
+.PortraitList__Item:hover {
+    transform: scale(1.1);
+    z-index: 2; 
+}
+
+.PortraitList__Item__Name {
+    position: absolute;
+    left: 50%;
+    top: 75%;
+    margin-left: -50%;
+    margin-right: -50%;
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: white;
+    /* font-weight: bold; */
+    background-color: rgba(0,0,0,0.7);
+    width: 100%;
+    height: 25px;
+    text-align: center;
+    border-radius: 5px;
 }
