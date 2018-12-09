@@ -39,9 +39,9 @@ class App extends Component {
     return (
       <div className="App">
         <NavBar imgLogo={logo} imgLogoFont={logoFont} menuEntries={menuEntries} searchImg = { searchLogo }/>
-        <div className="MainContainer">
+        {/* <div className="MainContainer">
           <PopularMangaContainer icon={popIcon} title={"Popular Manga"} portraits={portraits}/>        
-        </div>
+        </div> */}
         {/* <SearchBar/> */}
       </div>
     );

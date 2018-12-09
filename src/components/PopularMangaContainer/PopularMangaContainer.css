@@ -1,6 +1,6 @@
 .PopularMangaContainer {
     position: relative;
-    /* border: 1px solid red; */
+    margin: 20px;
 }
 
 .PopularMangaContainer__TitleBar {
