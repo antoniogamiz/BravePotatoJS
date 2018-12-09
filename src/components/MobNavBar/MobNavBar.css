@@ -9,15 +9,20 @@
 }
 
 .MobNavBar > button {
-    background-color: lightslategray;
+    background: black;
     font-weight: bold;
     font-size: 15px;
+    color: #61dafb;
     border: none;
     padding: 5px 0;
     text-align: center;
     text-decoration: none;
     cursor: pointer;   
-    margin: 0 0 4px 0;
+    margin: 10px 0 4px 0;
+}
+
+.MobNavBar > button:focus {
+    outline: none;
 }
 
 .MobNavBar > .NavBar__ItemsList {
