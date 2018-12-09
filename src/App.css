@@ -1,5 +1,11 @@
 :root {
-  --lateral-margin: 350px;
+  --lateral-margin: 20%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -18,4 +24,10 @@ body {
   margin: 30px var(--lateral-margin);
   /* border: 1px solid red; */
   height: 100%;
+}
+
+@media screen and (max-width: 1024px) {
+  :root {
+    --lateral-margin: 0px;
+  }
 }

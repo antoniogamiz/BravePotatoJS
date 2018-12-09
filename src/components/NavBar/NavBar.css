@@ -5,19 +5,21 @@
     padding: 0px var(--lateral-margin);
     display: flex;
     justify-content: space-between;
-    position: relative;
 }
 
-/* @media screen and (max-width: 1440px) {
-    .NavBar { padding: 0px 150px; }
+/* === Mobile === */
+
+.NavBar__DeskNav {
+    width: 100%;
+    display: block;
 }
+
+.NavBar__MobNav {
+    width: 100%;
+    display: none;
+}   
 
 @media screen and (max-width: 1024px) {
-    .NavBar { padding: 0px; }
+    .NavBar__MobNav { display: block; }
+    .NavBar__DeskNav { display: none; }
 }
-
-@media screen and (max-width: 375px) {
-    .NavBar {
-        display: none;
-    }
-} */

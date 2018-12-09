@@ -1,0 +1,26 @@
+.MobNavBar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.MobNavBar > .NavIcon  {
+    margin: 5px auto;
+}
+
+.MobNavBar > button {
+    background-color: lightslategray;
+    font-weight: bold;
+    font-size: 15px;
+    border: none;
+    padding: 5px 0;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;   
+    margin: 0 0 4px 0;
+}
+
+.MobNavBar > .NavBar__ItemsList {
+    flex-direction: column;
+    background: rgba(105,105,105, 0.6);
+}
