@@ -4,7 +4,6 @@
     background-color: yellowgreen ;
     display: flex;
     justify-content: flex-start;
-    width: 20%;
 }
 
 .TitleBar__icon {
@@ -16,12 +15,10 @@
 
 .TitleBar__text {
     color: white;
-    margin: 0 0px;
-    width: 150px;
-    font-size: 18px;
+    margin: 0 10px;
+    font-size: 16px;
     text-align: center;
     text-shadow: 1px 1px 5px black;
-    font-weight: bold;
     align-self: center;
 }
 
