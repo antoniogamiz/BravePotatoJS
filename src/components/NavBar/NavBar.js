@@ -4,10 +4,8 @@ import './NavBar.css';
 import NavBarList from '../NavBarList/NavBarList';
 
 import NavIcon from '../NavIcon/NavIcon';
-import NavBarMenuEntry from '../NavBarMenuEntry/NavBarMenuEntry';
 import MobNavBar from '../MobNavBar/MobNavBar';
 
-{/* <Search src={searchImg} onClick={this.searchClicked} show={true} />, */}
 
 
 class NavBar extends Component {
