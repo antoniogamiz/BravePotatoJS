@@ -1,5 +1,23 @@
 .UserProfile {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.UserProfile__Name {
+    font-size: 15px;
+    margin: 0 25px;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: rgba(187,239,253,0.7);
+}
+
+
+.UserProfile__Name__p {
+    font-size: 16px;
+}
+
+.UserProfile__Icon {
     height: 30px;
     width: 30px;
-    padding: 10px;
 }

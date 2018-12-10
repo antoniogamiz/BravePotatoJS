@@ -1,13 +1,13 @@
 .SearchBar {
-    width: 40%;
+    width: 50%;
     height: 40px;
-    border-radius: 40px;
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
     background: #fff;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: 1px solid black;
+    border: 1px solid lightblue;
 }
 .SearchBar__Icon {
     margin: 0 20px;
