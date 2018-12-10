@@ -9,7 +9,7 @@
     margin: 0 25px;
     padding: 5px;
     border-radius: 10px;
-    background-color: rgba(187,239,253,0.7);
+    background-color: rgba(187,239,253,0.2);
 }
 
 
@@ -20,4 +20,8 @@
 .UserProfile__Icon {
     height: 30px;
     width: 30px;
+}
+
+@media screen and (max-width: 700px) {
+
 }

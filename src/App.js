@@ -9,7 +9,7 @@ import userIcon from './img/avatar.svg'
 
 import NavBarMenuEntry from './components/NavBarMenuEntry/NavBarMenuEntry'
 import SearchBar from './components/SearchBar/SearchBar'
-import InlineContainer from './components/InlineContainer/InlineContainer'
+import CenterWrapper  from './components/containers/CenterWrapper/CenterWrapper'
 import UserProfile from './components/UserProfile/UserProfile'
 import PopularMangaContainer from './components/PopularMangaContainer/PopularMangaContainer';
 
@@ -22,8 +22,10 @@ let menuEntries = [
   NavBarMenuEntry( { url: "#", text: "Home" } ),
   NavBarMenuEntry( { url: "#", text: "Latest manga" } ),
   NavBarMenuEntry( { url: "#", text: "Completed manga" } ),
-  NavBarMenuEntry( { url: "#", text: "Rankings" } )
+  <UserProfile profileImg={userIcon}/>
+
 ];
+// NavBarMenuEntry( { url: "#", text: "Rankings" } )
 
 
 let portraits = [
@@ -43,10 +45,9 @@ class App extends Component {
       <div className="App">
         <NavBar imgLogo={logo} imgLogoFont={logoFont} menuEntries={menuEntries}/>
         <div className="MarginWrapper-20">
-          <InlineContainer>
+          <CenterWrapper width="70%">
             <SearchBar/>
-            <UserProfile profileImg={userIcon}/>
-          </InlineContainer>
+          </CenterWrapper>
           <div className="MainContainer">
             <PopularMangaContainer icon={popIcon} title={"Popular Manga"} portraits={portraits}/>        
           </div>
