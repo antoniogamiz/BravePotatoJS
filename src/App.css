@@ -8,6 +8,10 @@
   box-sizing: border-box;
 }
 
+.MarginWrapper-20 {
+  margin: 0 var(--lateral-margin);
+}
+
 body {
   background-color: rgb(192,192,192);
   height: 100%;
@@ -21,10 +25,9 @@ body {
 }
 
 .MainContainer {
-  margin: 30px var(--lateral-margin);
-  /* border: 1px solid red; */
-  height: 100%;
+  margin: 30px 0;
 }
+
 
 @media screen and (max-width: 1024px) {
   :root {

@@ -5,9 +5,12 @@ import NavBar from './components/NavBar/NavBar';
 import logoFont from './img/image.png';
 import logo from './img/cradle.svg';
 import popIcon from './img/popular.svg'
+import userIcon from './img/avatar.svg'
 
 import NavBarMenuEntry from './components/NavBarMenuEntry/NavBarMenuEntry'
-import searchLogo from './img/search-logo.svg'
+import SearchBar from './components/SearchBar/SearchBar'
+import InlineContainer from './components/InlineContainer/InlineContainer'
+import UserProfile from './components/UserProfile/UserProfile'
 import PopularMangaContainer from './components/PopularMangaContainer/PopularMangaContainer';
 
 import mock1 from './img/mock-portrait-1.jpg';
@@ -38,11 +41,16 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <NavBar imgLogo={logo} imgLogoFont={logoFont} menuEntries={menuEntries} searchImg = { searchLogo }/>
-        {/* <div className="MainContainer">
-          <PopularMangaContainer icon={popIcon} title={"Popular Manga"} portraits={portraits}/>        
-        </div> */}
-        {/* <SearchBar/> */}
+        <NavBar imgLogo={logo} imgLogoFont={logoFont} menuEntries={menuEntries}/>
+        <div className="MarginWrapper-20">
+          <InlineContainer>
+            <SearchBar/>
+            <UserProfile profileImg={userIcon}/>
+          </InlineContainer>
+          <div className="MainContainer">
+            <PopularMangaContainer icon={popIcon} title={"Popular Manga"} portraits={portraits}/>        
+          </div>
+        </div>
       </div>
     );
   }
