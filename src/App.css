@@ -34,18 +34,15 @@ body {
 
 .popular-manga-container-item {
   grid-area: popular;
-  border: 1px solid red;
 }
 
 .latest-manga-container-item {
   grid-area: latest;
-  border: 1px solid red;
   height: auto;
 }
 
 .tags-manga-container-item {
   grid-area: tags;
-  border: 1px solid red;
   height: 200px;
 }
 
