@@ -1,0 +1,28 @@
+.GenreList {
+    background: black;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgba(68,68,68,0.6);
+}
+
+.GenreList__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    list-style: none;
+    color: white;
+    margin-left: 20px;
+    padding-top: 14px;
+}
+
+.GenreList__item {
+    font-size: 14px;
+    padding: 2px 0;
+}
+
+.GenreList__item__link {
+    text-decoration: none;
+    color: white;
+}
+
+.GenreList__item__link:hover {
+    color: hotpink;
+}

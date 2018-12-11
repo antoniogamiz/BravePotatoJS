@@ -1,22 +1,26 @@
 import React, { Component } from 'react';
 import './App.css';
 
-import items from './randomData'
+import { items, genres } from './randomData'
 
-import NavBar from './components/NavBar/NavBar';
+// Images
 import logoFont from './img/image.png';
 import logo from './img/cradle.svg';
 import popIcon from './img/popular.svg'
 import latIcon from './img/stopwatch.svg'
-
+import genIcon from './img/price-tag.svg'
 import userIcon from './img/avatar.svg'
 
+
+// Components
+import NavBar from './components/NavBar/NavBar';
 import NavBarMenuEntry from './components/NavBarMenuEntry/NavBarMenuEntry'
 import SearchBar from './components/SearchBar/SearchBar'
 import CenterWrapper  from './components/containers/CenterWrapper/CenterWrapper'
 import UserProfile from './components/UserProfile/UserProfile'
 import PopularMangaContainer from './components/PopularMangaContainer/PopularMangaContainer';
 import LatestMangaContainer from './components/LatestMangaContainer/LatestMangaContainer';
+import GenresContainer from './components/GenresContainer/GenresContainer';
 
 import mock1 from './img/mock-portrait-1.jpg';
 import mock2 from './img/mock-portrait-2.jpg';
@@ -62,7 +66,8 @@ class App extends Component {
             <div className="latest-manga-container-item">            
               <LatestMangaContainer icon={latIcon} title={"Latest Manga"} items={items} />        
             </div>
-            <div className="tags-manga-container-item">            
+            <div className="genres-manga-container-item">            
+              <GenresContainer icon={genIcon} title={"Genres"} items={genres}/>
             </div>
           </div>
         </div>

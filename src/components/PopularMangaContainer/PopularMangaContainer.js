@@ -41,7 +41,7 @@ class PopularMangaContainer extends Component {
       const { portraits } = this.state;
       return (
         <div ref={this.target} className="PopularMangaContainer">
-            <TitleBar cName="PopularMangaContainer__TitleBar" icon={icon} title={title} bg={"yellowgreen"}/>
+            <TitleBar cName="PopularMangaContainer__TitleBar" icon={icon} title={title} bg={"rgb(140, 132, 185)"}/>
             <PortraitList items={portraits}/>
         </div>  
     );   

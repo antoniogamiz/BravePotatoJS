@@ -358,4 +358,54 @@ let items = [
     }
 ]
 
-export default items;
+let genres = [
+    "All",
+    "Action",
+    "Adult",
+    "Adventure",
+    "Comedy",
+    "Ecchi",
+    "Fantasy",
+    "Gender bender",
+    "Harem",
+    "Historical",
+    "Horror",
+    "Josei",
+    "Manhua",
+    "Manhwa",
+    "Martial arts",
+    "Mature",
+    "Mecha",
+    "Medical",
+    "Mystery",
+    "One shot",
+    "Psychological",
+    "Romance",
+    "School life",
+    "Schi fi",
+    "Seinen",
+    "Shoujo",
+    "Shoujo ai",
+    "Shounen",
+    "Shounen ai",
+    "Slice of life",
+    "Smut",
+    "Sports",
+    "Supernatural",
+    "Tragedy",
+    "Webtoons",
+    "Yaoi",
+    "Yuri"
+]
+
+let states = [
+    "All",
+    "Completed",
+    "Ongoing",
+    "Drop",
+    "Top read",
+    "Newest",
+    "Latest"
+]
+
+export { items, genres, states }

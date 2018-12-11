@@ -1,0 +1,9 @@
+.GenreContainer {
+    position: relative;
+    margin: 20px 10px;
+}
+
+.GenresContainer__TitleBar {
+    position: absolute;
+    top: -20px;
+}
