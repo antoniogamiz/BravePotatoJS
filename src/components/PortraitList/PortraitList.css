@@ -1,6 +1,6 @@
 .PortraitList {
     margin: 1px;
-    padding: 17px 0 13px 0;
+    padding: 23px 0px 13px 0px;
     overflow: hidden;
     display: flex;
     justify-content: space-evenly;
@@ -20,13 +20,13 @@
 }
 
 .PortraitList__Item__Img {
-    width: 100px;
-    height: 150px;
+    width: 120px;
+    height: 170px;
     overflow: hidden;
 }
 
 .PortraitList__Item:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
     z-index: 1;
 }
 

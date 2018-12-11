@@ -1,7 +1,7 @@
 .SectionContainer {
     position: relative;
-    margin: 10px;
-    border: 1px solid red;
+    margin: 15px;
+    /* border: 1px solid red; */
 }
 
 .SectionContainer__TitleBar {

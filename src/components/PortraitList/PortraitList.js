@@ -20,7 +20,7 @@ class PortraitList extends Component {
 
   updatePortraitsList() {
     let currentWidth = this.target.current.offsetWidth;
-    let nPortraits = Math.floor(currentWidth / 100) - 1;
+    let nPortraits = Math.floor(currentWidth / 120);
 
     this.setState({ portraits: this.portraits.slice(0, nPortraits) });
   }
