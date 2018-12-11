@@ -20,7 +20,6 @@ let menuEntries = [
   NavBarMenuEntry( { url: "#", text: "Latest manga" } ),
   NavBarMenuEntry( { url: "#", text: "Completed manga" } ),
   <UserProfile profileImg={userIcon}/>
-
 ];
 
 class App extends Component {
@@ -29,10 +28,10 @@ class App extends Component {
       <div className="App">
         <NavBar imgLogo={logo} imgLogoFont={logoFont} menuEntries={menuEntries}/>
         <div className="MarginWrapper-20">
-          <CenterWrapper width="90%">
-            <SearchBar/>
-          </CenterWrapper>
           <div className="main-container">
+            <div className="searchbar-container-item">
+              <SearchBar/>
+            </div>
             <div className="popular-manga-container-item">
               <SectionContainer icon={popIcon} title={"Popular Manga"} bg={"rgb(140, 132, 185)"}>
                 <PortraitList portraits={portraits}/>

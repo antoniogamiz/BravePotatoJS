@@ -28,9 +28,16 @@ body {
   display: grid;
   margin-top: 20px;
   grid-template: 
+    "search search" auto
     "popular popular" auto
     "latest genres" auto
     / 2fr 1fr;
+}
+
+.searchbar-container-item {
+  grid-area: search;
+  margin: 0 5%;
+  margin-bottom: 15px;
 }
 
 .popular-manga-container-item {
