@@ -1,9 +1,0 @@
-.InlineContainer {
-    display: flex;
-    justify-content: space-evenly;
-    margin: 10px;
-}
-
-@media screen and (max-width: 700px) {
-    .InlineContainer { flex-direction: column; }
-}
