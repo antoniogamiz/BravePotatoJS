@@ -26,6 +26,7 @@ body {
 
 .main-container {
   display: grid;
+  margin-top: 20px;
   grid-template: 
     "popular popular" auto
     "latest tags" auto
@@ -49,5 +50,16 @@ body {
 @media screen and (max-width: 1024px) {
   :root {
     --lateral-margin: 0px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .popular-manga-container-item { display: none; }
+  .tags-manga-container-item { display: none; }
+  .main-container {
+    grid-template: 
+    "latest" auto
+    / 100%;
+
   }
 }

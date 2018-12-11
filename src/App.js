@@ -52,7 +52,7 @@ class App extends Component {
       <div className="App">
         <NavBar imgLogo={logo} imgLogoFont={logoFont} menuEntries={menuEntries}/>
         <div className="MarginWrapper-20">
-          <CenterWrapper width="70%">
+          <CenterWrapper width="90%">
             <SearchBar/>
           </CenterWrapper>
           <div className="main-container">

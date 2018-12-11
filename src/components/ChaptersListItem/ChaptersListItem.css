@@ -1,6 +1,7 @@
 .ChaptersListItem {
     display: flex;
     justify-content: flex-start;
+    margin: 7px;
 }
 
 .ChaptersListItem__Text {
