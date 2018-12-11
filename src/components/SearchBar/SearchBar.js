@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './SearchBar.css'
-import icon from '../../img/search-engine.svg'
+import icon from '../../theme/img/search-engine.svg'
 
 class SearchBar extends Component {
 

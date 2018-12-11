@@ -1,7 +1,27 @@
-import mock1 from './img/mock-portrait-1.jpg';
-import mock2 from './img/mock-portrait-2.jpg';
-import mock3 from './img/mock-portrait-3.jpg';
-import mock4 from './img/mock-portrait-4.jpg';
+import mock1 from './theme/img/mock-portrait-1.jpg';
+import mock2 from './theme/img/mock-portrait-2.jpg';
+import mock3 from './theme/img/mock-portrait-3.jpg';
+import mock4 from './theme/img/mock-portrait-4.jpg';
+
+import popIcon from './theme/img/popular.svg'
+import latIcon from './theme/img/stopwatch.svg'
+import genIcon from './theme/img/price-tag.svg'
+
+import logoFont from './theme/img/image.png';
+import logo from './theme/img/cradle.svg';
+import userIcon from './theme/img/avatar.svg'
+
+// mock portraits
+let portraits = [mock1, mock2, mock3, mock4, mock1, mock2, mock3, mock4]
+export { mock1, mock2, mock3, mock4, portraits }
+
+// titlebars icons
+export { popIcon, latIcon, genIcon }
+
+// main images + userIcon
+export { logoFont, logo, userIcon }
+
+
 
 let items = [
     {
