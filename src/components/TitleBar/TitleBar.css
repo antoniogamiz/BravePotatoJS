@@ -1,7 +1,6 @@
 .TitleBar {
     height: 30px;
     border-radius: 7px;
-    background-color: yellowgreen ;
     display: flex;
     justify-content: flex-start;
 }

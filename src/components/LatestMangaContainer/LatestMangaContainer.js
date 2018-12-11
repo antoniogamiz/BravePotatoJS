@@ -11,7 +11,7 @@ class LatestMangaContainer extends Component {
     const { icon, title, items } = this.props;
     return (
         <div  className="LatestMangaContainer">
-            <TitleBar cName="LatestMangaContainer__TitleBar" icon={icon} title={title} />
+            <TitleBar cName="LatestMangaContainer__TitleBar" icon={icon} title={title} bg={"red"}/>
             <DetailedPortraitList items={items}/>
             {console.log(items)}
         </div>
