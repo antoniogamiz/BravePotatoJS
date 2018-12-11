@@ -1,0 +1,12 @@
+.ChaptersList {
+    /* border: 1px solid blueviolet; */
+    width: 100%;
+    margin-left: 15px;
+    list-style: none;
+}
+
+.ChaptersList__Title {
+    color: #059e9a;
+    font-size: 12px;
+    font-weight: bold;
+}

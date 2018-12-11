@@ -1,13 +1,13 @@
 import React from 'react';
 
 import './DetailedPortraitList.css';
+import DetailedItem from '../DetailedItem/DetailedItem';
 
 export default ({items}) => (
     <div className="DetailedPortraitList">
     { items.map( (v,i) => 
         <div key={i} className="DetailedPortraitList__Item">
-            <img className="DetailedPortraitList__Item__Img" key={i} src={v} alt=""></img> 
-            <p>One Piece Chapter aaaa</p>
+            <DetailedItem manga={v}/>
         </div>
     )}
     </div>

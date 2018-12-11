@@ -1,10 +1,14 @@
 import React, { Component } from 'react';
 import './App.css';
 
+import items from './randomData'
+
 import NavBar from './components/NavBar/NavBar';
 import logoFont from './img/image.png';
 import logo from './img/cradle.svg';
 import popIcon from './img/popular.svg'
+import latIcon from './img/stopwatch.svg'
+
 import userIcon from './img/avatar.svg'
 
 import NavBarMenuEntry from './components/NavBarMenuEntry/NavBarMenuEntry'
@@ -26,8 +30,6 @@ let menuEntries = [
   <UserProfile profileImg={userIcon}/>
 
 ];
-// NavBarMenuEntry( { url: "#", text: "Rankings" } )
-
 
 let portraits = [
   mock1,
@@ -58,7 +60,7 @@ class App extends Component {
               <PopularMangaContainer icon={popIcon} title={"Popular Manga"} portraits={portraits}/>        
             </div>
             <div className="latest-manga-container-item">            
-              <LatestMangaContainer icon={popIcon} title={"Latest Manga"} items={portraits} />        
+              <LatestMangaContainer icon={latIcon} title={"Latest Manga"} items={items} />        
             </div>
             <div className="tags-manga-container-item">            
             </div>

@@ -1,0 +1,10 @@
+.DetailedItem {
+    width: 100%;
+    margin: 10px 3px;
+    display: flex;
+}
+
+.DetailedItem__Img {
+    width: 70px;
+    height: 105px;
+}

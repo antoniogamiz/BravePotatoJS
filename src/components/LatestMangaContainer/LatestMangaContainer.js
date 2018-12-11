@@ -13,6 +13,7 @@ class LatestMangaContainer extends Component {
         <div  className="LatestMangaContainer">
             <TitleBar cName="LatestMangaContainer__TitleBar" icon={icon} title={title} />
             <DetailedPortraitList items={items}/>
+            {console.log(items)}
         </div>
     );
   }

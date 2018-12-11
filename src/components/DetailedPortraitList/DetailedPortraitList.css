@@ -10,10 +10,4 @@
 
 .DetailedPortraitList__Item {
     width: 50%;
-    border: 1px solid green;
-}
-
-.DetailedPortraitList__Item__Img {
-    width: 80px;
-    height: 130px;
 }
