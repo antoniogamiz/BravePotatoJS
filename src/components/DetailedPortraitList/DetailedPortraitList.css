@@ -10,7 +10,7 @@
 
 .DetailedPortraitList__Item {
     width: 50%;
-    margin: 3px 0;
+    margin: 3px 0 15px 0;
 }
 
 @media screen and (max-width: 700px) {
