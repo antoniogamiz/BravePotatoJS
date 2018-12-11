@@ -9,7 +9,7 @@
 }
 
 .MarginWrapper-20 {
-  margin: 0 var(--lateral-margin);
+  margin: 0 var(--lateral-margin); 
 }
 
 body {
@@ -24,10 +24,30 @@ body {
   background-color: white;
 }
 
-.MainContainer {
-  margin: 30px 0;
+.main-container {
+  display: grid;
+  grid-template: 
+    "popular popular" auto
+    "latest tags" auto
+    / 2fr 1fr;
 }
 
+.popular-manga-container-item {
+  grid-area: popular;
+  border: 1px solid red;
+}
+
+.latest-manga-container-item {
+  grid-area: latest;
+  border: 1px solid red;
+  height: auto;
+}
+
+.tags-manga-container-item {
+  grid-area: tags;
+  border: 1px solid red;
+  height: 200px;
+}
 
 @media screen and (max-width: 1024px) {
   :root {

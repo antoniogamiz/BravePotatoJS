@@ -1,0 +1,19 @@
+.DetailedPortraitList {
+    background-color: black;
+    display: flex;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgba(68,68,68,0.6);
+    flex-wrap: wrap;
+    margin: 5px;
+    padding: 17px 13px;
+}
+
+.DetailedPortraitList__Item {
+    width: 50%;
+    border: 1px solid green;
+}
+
+.DetailedPortraitList__Item__Img {
+    width: 80px;
+    height: 130px;
+}

@@ -12,6 +12,7 @@ import SearchBar from './components/SearchBar/SearchBar'
 import CenterWrapper  from './components/containers/CenterWrapper/CenterWrapper'
 import UserProfile from './components/UserProfile/UserProfile'
 import PopularMangaContainer from './components/PopularMangaContainer/PopularMangaContainer';
+import LatestMangaContainer from './components/LatestMangaContainer/LatestMangaContainer';
 
 import mock1 from './img/mock-portrait-1.jpg';
 import mock2 from './img/mock-portrait-2.jpg';
@@ -37,6 +38,10 @@ let portraits = [
   mock2,
   mock3,
   mock4,
+  mock1,
+  mock2,
+  mock3,
+  mock4
 ]
 
 class App extends Component {
@@ -48,8 +53,15 @@ class App extends Component {
           <CenterWrapper width="70%">
             <SearchBar/>
           </CenterWrapper>
-          <div className="MainContainer">
-            <PopularMangaContainer icon={popIcon} title={"Popular Manga"} portraits={portraits}/>        
+          <div className="main-container">
+            <div className="popular-manga-container-item">
+              <PopularMangaContainer icon={popIcon} title={"Popular Manga"} portraits={portraits}/>        
+            </div>
+            <div className="latest-manga-container-item">            
+              <LatestMangaContainer icon={popIcon} title={"Latest Manga"} items={portraits} />        
+            </div>
+            <div className="tags-manga-container-item">            
+            </div>
           </div>
         </div>
       </div>

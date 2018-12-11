@@ -22,7 +22,7 @@ class PopularMangaContainer extends Component {
 
   updatePortraitsList() {
     let currentWidth = this.target.current.offsetWidth;
-    let nPortraits = Math.floor(currentWidth / 120);
+    let nPortraits = Math.floor(currentWidth / 100);
 
     this.setState({ portraits: this.portraits.slice(0, nPortraits) });
   }
