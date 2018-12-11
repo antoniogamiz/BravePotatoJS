@@ -1,6 +1,7 @@
 .LatestMangaContainer {
     position: relative;
-    margin: 20px 10px;
+    margin: 10px;
+    border: 1px solid red;
 }
 
 .LatestMangaContainer__TitleBar {

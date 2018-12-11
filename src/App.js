@@ -18,9 +18,13 @@ import NavBarMenuEntry from './components/NavBarMenuEntry/NavBarMenuEntry'
 import SearchBar from './components/SearchBar/SearchBar'
 import CenterWrapper  from './components/containers/CenterWrapper/CenterWrapper'
 import UserProfile from './components/UserProfile/UserProfile'
+import SectionContainer from './components/SectionContainer/SectionContainer'
 import PopularMangaContainer from './components/PopularMangaContainer/PopularMangaContainer';
 import LatestMangaContainer from './components/LatestMangaContainer/LatestMangaContainer';
-import GenresContainer from './components/GenresContainer/GenresContainer';
+
+import GenreList from './components/GenreList/GenreList'
+import PortraitList from './components/PortraitList/PortraitList'
+import DetailedPortraitList from './components/DetailedPortraitList/DetailedPortraitList'
 
 import mock1 from './img/mock-portrait-1.jpg';
 import mock2 from './img/mock-portrait-2.jpg';
@@ -61,13 +65,19 @@ class App extends Component {
           </CenterWrapper>
           <div className="main-container">
             <div className="popular-manga-container-item">
-              <PopularMangaContainer icon={popIcon} title={"Popular Manga"} portraits={portraits}/>        
+              <SectionContainer icon={popIcon} title={"Popular Manga"} bg={"rgb(140, 132, 185)"}>
+                <PortraitList portraits={portraits}/>
+              </SectionContainer>
             </div>
-            <div className="latest-manga-container-item">            
-              <LatestMangaContainer icon={latIcon} title={"Latest Manga"} items={items} />        
+            <div className="latest-manga-container-item">        
+              <SectionContainer icon={latIcon} title={"Latest Manga"} bg={"red"}>
+                <DetailedPortraitList items={items}/>
+              </SectionContainer>
             </div>
             <div className="genres-manga-container-item">            
-              <GenresContainer icon={genIcon} title={"Genres"} items={genres}/>
+              <SectionContainer icon={genIcon} title={"Genres"} bg={"#16a085"}>          
+                <GenreList items={genres}/>
+              </SectionContainer>
             </div>
           </div>
         </div>
