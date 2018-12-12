@@ -23,7 +23,7 @@ export { logoFont, logo, userIcon }
 
 
 
-let items = [
+let items_ = [
     {
         title: "One Piece",
         chapters: [
@@ -427,5 +427,7 @@ let states = [
     "Newest",
     "Latest"
 ]
+
+let items = [...items_,...items_ ]
 
 export { items, genres, states }

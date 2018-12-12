@@ -8,12 +8,12 @@ import { logoFont, logo, userIcon } from './randomData'
 import NavBar from './components/NavBar/NavBar';
 import NavBarMenuEntry from './components/NavBarMenuEntry/NavBarMenuEntry'
 import SearchBar from './components/SearchBar/SearchBar'
-import CenterWrapper  from './components/containers/CenterWrapper/CenterWrapper'
 import UserProfile from './components/UserProfile/UserProfile'
 import SectionContainer from './components/SectionContainer/SectionContainer'
 import GenreList from './components/GenreList/GenreList'
 import PortraitList from './components/PortraitList/PortraitList'
 import DetailedPortraitList from './components/DetailedPortraitList/DetailedPortraitList'
+import Footer from './components/Footer/Footer'
 
 let menuEntries = [ 
   NavBarMenuEntry( { url: "#", text: "Home" } ),
@@ -49,6 +49,7 @@ class App extends Component {
             </div>
           </div>
         </div>
+        <Footer/>
       </div>
     );
   }

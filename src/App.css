@@ -31,6 +31,7 @@ body {
     "search search" auto
     "popular popular" auto
     "latest genres" auto
+    "footer footer" auto
     / 2fr 1fr;
 }
 
@@ -51,7 +52,10 @@ body {
 
 .genres-manga-container-item {
   grid-area: genres;
-  height: 200px;
+}
+
+.footer-container-item {
+  grid-area: footer;
 }
 
 @media screen and (max-width: 1024px) {
@@ -62,6 +66,7 @@ body {
     grid-template: 
     "latest" auto
     "genres" auto
+    "footer" auto
     / 100%;
   }
 }
@@ -73,6 +78,7 @@ body {
     grid-template: 
     "latest" auto
     "genres" auto
+    "footer" auto
     / 100%;
 
   }

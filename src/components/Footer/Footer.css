@@ -1,0 +1,25 @@
+.Footer {
+    background-color: black;
+    padding: 10px 20%;
+}
+
+.Footer__Title {
+    color: #61dafb;
+    font-size: 15px;
+    padding-bottom: 5px;
+}
+
+.Footer__Text {
+    font-size: 12px;
+    text-align: justify;
+    text-justify: inter-word;
+    color: white;
+}
+
+.Footer__Copy {
+    margin-top: 10px;
+    font-size: 12px;
+    text-align: center;
+    text-justify: center;
+    color: white;
+}
