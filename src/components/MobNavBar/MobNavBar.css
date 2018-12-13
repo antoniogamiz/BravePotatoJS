@@ -1,14 +1,14 @@
-.MobNavBar {
+.mob-nav-bar {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.MobNavBar > .NavIcon  {
+.mob-nav-bar > .nav-icon  {
     margin: 5px auto;
 }
 
-.MobNavBar > button {
+.mob-nav-bar > button {
     background: black;
     font-weight: bold;
     font-size: 15px;
@@ -21,11 +21,11 @@
     margin: 10px 0 4px 0;
 }
 
-.MobNavBar > button:focus {
+.mob-nav-bar > button:focus {
     outline: none;
 }
 
-.MobNavBar > .NavBar__ItemsList {
+.mob-nav-bar > .nav-bar__items-list {
     flex-direction: column;
     background: rgba(105,105,105, 0.4);
 }

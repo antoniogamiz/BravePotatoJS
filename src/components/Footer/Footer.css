@@ -1,22 +1,22 @@
-.Footer {
+.footer {
     background-color: black;
     padding: 10px 20%;
 }
 
-.Footer__Title {
+.footer__title {
     color: #61dafb;
     font-size: 15px;
     padding-bottom: 5px;
 }
 
-.Footer__Text {
+.footer__text {
     font-size: 12px;
     text-align: justify;
     text-justify: inter-word;
     color: white;
 }
 
-.Footer__Copy {
+.footer__copy {
     margin-top: 10px;
     font-size: 12px;
     text-align: center;

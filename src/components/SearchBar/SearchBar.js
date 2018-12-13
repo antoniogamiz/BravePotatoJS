@@ -6,10 +6,10 @@ class SearchBar extends Component {
 
     render() {
         return (
-            <form className="SearchBar">
-                <img className="SearchBar__Icon" src={icon} alt=""></img>
-                <input className="SearchBar__Input" type="text" placeholder="Search"></input>
-                <p className="SearchBar_Tags">tags</p>
+            <form className="search-bar">
+                <img className="search-bar__icon" src={icon} alt=""></img>
+                <input className="search-bar__input" type="text" placeholder="Search"></input>
+                <p className="search-bar_tags">tags</p>
             </form>        
         );
     }

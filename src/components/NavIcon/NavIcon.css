@@ -1,9 +1,9 @@
-.NavIcon {
+.nav-icon {
     display: flex;
     margin: 0 auto;
 }
 
-.NavIcon_Img {
+.nav-icon_img {
     height: 40px;
     align-self: center;
     vertical-align: middle;

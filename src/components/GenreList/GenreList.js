@@ -3,13 +3,13 @@ import React from 'react';
 import './GenreList.css';
 
 export default ({items}) => (
-    <div className="GenreList">
-        <ul className="GenreList__list">
+    <div className="genre-list">
+        <ul className="genre-list__list">
         {
             items.map( (v,i) => 
-                <li className="GenreList__item" key={i}>
+                <li className="genre-list__item" key={i}>
                     {/* eslint-disable-next-line */}
-                    <a className="GenreList__item__link" href="#">{v}</a>
+                    <a className="genre-list__item__link" href="#">{v}</a>
                 </li> 
             )
         }

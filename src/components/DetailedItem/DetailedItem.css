@@ -1,10 +1,10 @@
-.DetailedItem {
+.detailed-item {
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 4fr;
 }
 
-.DetailedItem__Img {
+.detailed-item__img {
     width: 85px;
     height: 120px;
 }

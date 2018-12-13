@@ -19,11 +19,11 @@ class NavBar extends Component {
     ]
 
     return (
-        <nav className="NavBar">
-          <div className="NavBar__DeskNav">
+        <nav className="nav-bar">
+          <div className="nav-bar__desk-nav">
             <NavBarList items={deskItems}/>
           </div>
-          <div className="NavBar__MobNav">
+          <div className="nav-bar__mob-nav">
             <MobNavBar imgLogo={imgLogo} imgLogoFont={imgLogoFont} menuEntries={menuEntries}/>
           </div>
         </nav>

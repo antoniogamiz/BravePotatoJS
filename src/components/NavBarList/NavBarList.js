@@ -3,9 +3,9 @@ import React from 'react';
 import './NavBarList.css';
 
 export default ({items}) => (
-    <ul className="NavBar__ItemsList">
+    <ul className="nav-bar__items-list">
     { items.map( (v,i) => 
-        <li className="NavBar__Item" key={i} >
+        <li className="nav-bar__item" key={i} >
             {v}
         </li> 
     )}

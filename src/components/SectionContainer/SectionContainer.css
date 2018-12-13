@@ -1,10 +1,10 @@
-.SectionContainer {
+.section-container {
     position: relative;
     margin: 15px;
     /* border: 1px solid red; */
 }
 
-.SectionContainer__TitleBar {
+.section-container__title-bar {
     position: absolute;
     left: -5px;
     top: -20px;

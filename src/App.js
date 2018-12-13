@@ -27,7 +27,7 @@ class App extends Component {
     return (
       <div className="App">
         <NavBar imgLogo={logo} imgLogoFont={logoFont} menuEntries={menuEntries}/>
-        <div className="MarginWrapper-20">
+        <div className="margin-wrapper-20">
           <div className="main-container">
             <div className="searchbar-container-item">
               <SearchBar/>

@@ -1,4 +1,4 @@
-.NavBar__ItemsList {
+.nav-bar__items-list {
     list-style-type: none;
     width: 100%;
     margin: 0;
@@ -8,7 +8,7 @@
     justify-content: space-between;
 }
 
-.NavBar__Item {
+.nav-bar__item {
     display: flex;
     align-self: center;
     vertical-align: middle;

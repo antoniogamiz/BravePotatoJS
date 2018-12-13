@@ -1,18 +1,18 @@
-.TitleBar {
+.title-bar {
     height: 30px;
     border-radius: 7px;
     display: flex;
     justify-content: flex-start;
 }
 
-.TitleBar__icon {
+.title-bar__icon {
     margin: 0 5px 0 15px;
     align-self: center;
     width: 25px;
     height: 25px;
 }
 
-.TitleBar__text {
+.title-bar__text {
     color: white;
     margin: 0 10px;
     font-size: 16px;
@@ -21,7 +21,7 @@
     align-self: center;
 }
 
-.TitleBar__border {
+.title-bar__border {
     margin-left: 5px;
     width: 100%;
     background-color: black;

@@ -4,9 +4,9 @@ import './DetailedPortraitList.css';
 import DetailedItem from '../DetailedItem/DetailedItem';
 
 export default ({items}) => (
-    <div className="DetailedPortraitList">
+    <div className="detailed-portrait-list">
     { items.map( (v,i) => 
-        <div key={i} className="DetailedPortraitList__Item">
+        <div key={i} className="detailed-portrait-list__item">
             <DetailedItem manga={v}/>
         </div>
     )}

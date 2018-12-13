@@ -37,11 +37,11 @@ class PortraitList extends Component {
   render() {
       const { portraits } = this.state;
       return (
-        <div ref={this.target} className="PortraitList">
+        <div ref={this.target} className="portrait-list">
         { portraits.map( (v,i) => 
-            <div key={i} className="PortraitList__Item">
-                <img className="PortraitList__Item__Img" key={i} src={v} alt=""></img> 
-                <p className="PortraitList__Item__Name">One Piece Chapter aaaa</p>
+            <div key={i} className="portrait-list__item">
+                <img className="portrait-list__item__img" key={i} src={v} alt=""></img> 
+                <p className="portrait-list__item__name">One Piece Chapter aaaa</p>
             </div>
         )}
         </div>

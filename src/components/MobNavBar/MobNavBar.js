@@ -26,7 +26,7 @@ class MobNavBar extends Component {
     const { show } = this.state;
 
     return (
-          <div className="MobNavBar">
+          <div className="mob-nav-bar">
             <NavIcon icon={imgLogo} iconFont={imgLogoFont}/>
             <button onClick={this.onClick}>MENU</button>
             { show ? <NavBarList items={menuEntries} /> : ""}

@@ -1,10 +1,10 @@
-.ChaptersListItem {
+.chapters-list-item {
     display: flex;
     justify-content: flex-start;
     margin: 7px;
 }
 
-.ChaptersListItem__Text {
+.chapters-list-item__text {
     color: white;
     width: 65%;
     font-size: 13px;
@@ -13,7 +13,7 @@
     text-overflow: ellipsis;
 }
 
-.ChaptersListItem__Date {
+.chapters-list-item__date {
     color: grey;
     font-size: 11px;
 }

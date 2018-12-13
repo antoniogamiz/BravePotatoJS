@@ -3,9 +3,9 @@ import React from 'react';
 import './ChaptersListItem.css';
 
 export default ({chapter}) => (
-    <div className="ChaptersListItem">
-        <p className="ChaptersListItem__Text">{chapter.name}</p>
-        <i className="ChaptersListItem__Date">{chapter.date}</i>
+    <div className="chapters-list-item">
+        <p className="chapters-list-item__text">{chapter.name}</p>
+        <i className="chapters-list-item__date">{chapter.date}</i>
     </div>
 );
 

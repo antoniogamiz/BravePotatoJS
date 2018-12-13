@@ -1,4 +1,4 @@
-.NavBar {
+.nav-bar {
     background-color: black;
     color: white;
     padding: 0px var(--lateral-margin);
@@ -8,17 +8,17 @@
 
 /* === Mobile === */
 
-.NavBar__DeskNav {
+.nav-bar__desk-nav {
     width: 100%;
     display: block;
 }
 
-.NavBar__MobNav {
+.nav-bar__mob-nav {
     width: 100%;
     display: none;
 }   
 
 @media screen and (max-width: 1024px) {
-    .NavBar__MobNav { display: block; }
-    .NavBar__DeskNav { display: none; }
+    .nav-bar__mob-nav { display: block; }
+    .nav-bar__desk-nav { display: none; }
 }

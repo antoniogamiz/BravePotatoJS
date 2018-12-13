@@ -1,4 +1,4 @@
-.PortraitList {
+.portrait-list {
     margin: 1px;
     padding: 23px 0px 13px 0px;
     overflow: hidden;
@@ -10,7 +10,7 @@
     border: 4px solid rgb(140,132,185);
 }
 
-.PortraitList__Item {
+.portrait-list__item {
     display: flex;
     align-self: center;
     vertical-align: middle;
@@ -20,18 +20,18 @@
     border: 1px solid white;
 }
 
-.PortraitList__Item__Img {
+.portrait-list__item__img {
     width: 120px;
     height: 170px;
     overflow: hidden;
 }
 
-.PortraitList__Item:hover {
+.portrait-list__item:hover {
     transform: scale(1.1);
     z-index: 1;
 }
 
-.PortraitList__Item__Name {
+.portrait-list__item__name {
     position: absolute;
     left: 50%;
     top: 75%;

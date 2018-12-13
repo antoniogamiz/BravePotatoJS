@@ -5,13 +5,13 @@ class UserProfile extends Component {
   render() {
     const { profileImg } = this.props;
     return (
-      <div className="UserProfile">
-        <div className="UserProfile__Name">
-          <p className="UserProfile__Name__p">Anonymous User</p>
+      <div className="user-profile">
+        <div className="user-profile__name">
+          <p className="user-profile__name__p">Anonymous User</p>
         </div>
         {/* eslint-disable-next-line */}
         <a href="#">
-            <img className="UserProfile__Icon" src={profileImg} alt="user-profile"></img>
+            <img className="user-profile__icon" src={profileImg} alt="user-profile"></img>
         </a>
       </div>
     );   
