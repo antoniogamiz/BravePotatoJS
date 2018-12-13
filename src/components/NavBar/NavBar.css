@@ -1,6 +1,5 @@
 .NavBar {
     background-color: black;
-    /* height: 50px; */
     color: white;
     padding: 0px var(--lateral-margin);
     display: flex;
