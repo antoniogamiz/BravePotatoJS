@@ -19,7 +19,7 @@ let menuEntries = [
   NavBarMenuEntry( { url: "#", text: "Home" } ),
   NavBarMenuEntry( { url: "#", text: "Latest manga" } ),
   NavBarMenuEntry( { url: "#", text: "Completed manga" } ),
-  <UserProfile profileImg={userIcon}/>
+  <UserProfile profileImg={userIcon}/>,
 ];
 
 class App extends Component {

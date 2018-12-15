@@ -9,7 +9,7 @@ class SearchBar extends Component {
             <form className="search-bar">
                 <img className="search-bar__icon" src={icon} alt=""></img>
                 <input className="search-bar__input" type="text" placeholder="Search"></input>
-                <p className="search-bar_tags">tags</p>
+                <p className="search-bar__tags">tags</p>
             </form>        
         );
     }

@@ -1,5 +1,5 @@
 :root {
-  --lateral-margin: 20%;
+  --lateral-margin: 15%;
 }
 
 * {
@@ -37,7 +37,7 @@ body {
 
 .searchbar-container-item {
   grid-area: search;
-  margin: 0 5%;
+  margin: 0 15%;
   margin-bottom: 15px;
 }
 
