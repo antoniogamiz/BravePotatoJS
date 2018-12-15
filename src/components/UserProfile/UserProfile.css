@@ -11,6 +11,10 @@
     padding: 5px;
     border-radius: 10px;
     background-color: rgba(187,239,253,0.2);
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
