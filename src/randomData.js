@@ -26,19 +26,15 @@ let items_ = [
     title: "One Piece",
     chapters: [
       {
-        name: "Chapter 129801",
+        name: "Chapter 129801 One piece es lo mejor",
         date: "11-30 23:51"
       },
       {
-        name: "Chapter 129801",
+        name: "Chapter 129801 One piece es lo mejor",
         date: "11-30 23:51"
       },
       {
-        name: "Chapter 129801",
-        date: "11-30 23:51"
-      },
-      {
-        name: "Chapter 129801",
+        name: "Chapter 129801 One piece es lo mejor",
         date: "11-30 23:51"
       }
     ],
@@ -48,19 +44,15 @@ let items_ = [
     title: "One Piece",
     chapters: [
       {
-        name: "Chapter 129801",
+        name: "Chapter 129801 One piece es lo mejor",
         date: "11-30 23:51"
       },
       {
-        name: "Chapter 129801",
+        name: "Chapter 129801 One piece es lo mejor",
         date: "11-30 23:51"
       },
       {
-        name: "Chapter 129801",
-        date: "11-30 23:51"
-      },
-      {
-        name: "Chapter 129801",
+        name: "Chapter 129801 One piece es lo mejor",
         date: "11-30 23:51"
       }
     ],
@@ -70,19 +62,15 @@ let items_ = [
     title: "One Piece",
     chapters: [
       {
-        name: "Chapter 129801",
+        name: "Chapter 129801 One piece es lo mejor",
         date: "11-30 23:51"
       },
       {
-        name: "Chapter 129801",
+        name: "Chapter 129801 One piece es lo mejor",
         date: "11-30 23:51"
       },
       {
-        name: "Chapter 129801",
-        date: "11-30 23:51"
-      },
-      {
-        name: "Chapter 129801",
+        name: "Chapter 129801 One piece es lo mejor",
         date: "11-30 23:51"
       }
     ],
@@ -92,283 +80,15 @@ let items_ = [
     title: "One Piece",
     chapters: [
       {
-        name: "Chapter 129801",
+        name: "Chapter 129801 One piece es lo mejor",
         date: "11-30 23:51"
       },
       {
-        name: "Chapter 129801",
+        name: "Chapter 129801 One piece es lo mejor",
         date: "11-30 23:51"
       },
       {
-        name: "Chapter 129801",
-        date: "11-30 23:51"
-      },
-      {
-        name: "Chapter 129801",
-        date: "11-30 23:51"
-      }
-    ],
-    src: mock4
-  },
-  {
-    title: "One Piece",
-    chapters: [
-      {
-        name: "Chapter 129801",
-        date: "11-30 23:51"
-      },
-      {
-        name: "Chapter 129801",
-        date: "11-30 23:51"
-      },
-      {
-        name: "Chapter 129801",
-        date: "11-30 23:51"
-      },
-      {
-        name: "Chapter 129801",
-        date: "11-30 23:51"
-      }
-    ],
-    src: mock1
-  },
-  {
-    title: "One Piece",
-    chapters: [
-      {
-        name: "Chapter 129801",
-        date: "11-30 23:51"
-      },
-      {
-        name: "Chapter 129801",
-        date: "11-30 23:51"
-      },
-      {
-        name: "Chapter 129801",
-        date: "11-30 23:51"
-      },
-      {
-        name: "Chapter 129801",
-        date: "11-30 23:51"
-      }
-    ],
-    src: mock2
-  },
-  {
-    title: "One Piece",
-    chapters: [
-      {
-        name: "Chapter 129801",
-        date: "11-30 23:51"
-      },
-      {
-        name: "Chapter 129801",
-        date: "11-30 23:51"
-      },
-      {
-        name: "Chapter 129801",
-        date: "11-30 23:51"
-      },
-      {
-        name: "Chapter 129801",
-        date: "11-30 23:51"
-      }
-    ],
-    src: mock3
-  },
-  {
-    title: "One Piece",
-    chapters: [
-      {
-        name: "Chapter 129801",
-        date: "11-30 23:51"
-      },
-      {
-        name: "Chapter 129801",
-        date: "11-30 23:51"
-      },
-      {
-        name: "Chapter 129801",
-        date: "11-30 23:51"
-      },
-      {
-        name: "Chapter 129801",
-        date: "11-30 23:51"
-      }
-    ],
-    src: mock4
-  },
-  {
-    title: "One Piece",
-    chapters: [
-      {
-        name: "Chapter 129801",
-        date: "11-30 23:51"
-      },
-      {
-        name: "Chapter 129801",
-        date: "11-30 23:51"
-      },
-      {
-        name: "Chapter 129801",
-        date: "11-30 23:51"
-      },
-      {
-        name: "Chapter 129801",
-        date: "11-30 23:51"
-      }
-    ],
-    src: mock1
-  },
-  {
-    title: "One Piece",
-    chapters: [
-      {
-        name: "Chapter 129801",
-        date: "11-30 23:51"
-      },
-      {
-        name: "Chapter 129801",
-        date: "11-30 23:51"
-      },
-      {
-        name: "Chapter 129801",
-        date: "11-30 23:51"
-      },
-      {
-        name: "Chapter 129801",
-        date: "11-30 23:51"
-      }
-    ],
-    src: mock2
-  },
-  {
-    title: "One Piece",
-    chapters: [
-      {
-        name: "Chapter 129801",
-        date: "11-30 23:51"
-      },
-      {
-        name: "Chapter 129801",
-        date: "11-30 23:51"
-      },
-      {
-        name: "Chapter 129801",
-        date: "11-30 23:51"
-      },
-      {
-        name: "Chapter 129801",
-        date: "11-30 23:51"
-      }
-    ],
-    src: mock3
-  },
-  {
-    title: "One Piece",
-    chapters: [
-      {
-        name: "Chapter 129801",
-        date: "11-30 23:51"
-      },
-      {
-        name: "Chapter 129801",
-        date: "11-30 23:51"
-      },
-      {
-        name: "Chapter 129801",
-        date: "11-30 23:51"
-      },
-      {
-        name: "Chapter 129801",
-        date: "11-30 23:51"
-      }
-    ],
-    src: mock4
-  },
-  {
-    title: "One Piece",
-    chapters: [
-      {
-        name: "Chapter 129801",
-        date: "11-30 23:51"
-      },
-      {
-        name: "Chapter 129801",
-        date: "11-30 23:51"
-      },
-      {
-        name: "Chapter 129801",
-        date: "11-30 23:51"
-      },
-      {
-        name: "Chapter 129801",
-        date: "11-30 23:51"
-      }
-    ],
-    src: mock1
-  },
-  {
-    title: "One Piece",
-    chapters: [
-      {
-        name: "Chapter 129801",
-        date: "11-30 23:51"
-      },
-      {
-        name: "Chapter 129801",
-        date: "11-30 23:51"
-      },
-      {
-        name: "Chapter 129801",
-        date: "11-30 23:51"
-      },
-      {
-        name: "Chapter 129801",
-        date: "11-30 23:51"
-      }
-    ],
-    src: mock2
-  },
-  {
-    title: "One Piece",
-    chapters: [
-      {
-        name: "Chapter 129801",
-        date: "11-30 23:51"
-      },
-      {
-        name: "Chapter 129801",
-        date: "11-30 23:51"
-      },
-      {
-        name: "Chapter 129801",
-        date: "11-30 23:51"
-      },
-      {
-        name: "Chapter 129801",
-        date: "11-30 23:51"
-      }
-    ],
-    src: mock3
-  },
-  {
-    title: "One Piece",
-    chapters: [
-      {
-        name: "Chapter 129801",
-        date: "11-30 23:51"
-      },
-      {
-        name: "Chapter 129801",
-        date: "11-30 23:51"
-      },
-      {
-        name: "Chapter 129801",
-        date: "11-30 23:51"
-      },
-      {
-        name: "Chapter 129801",
+        name: "Chapter 129801 One piece es lo mejor",
         date: "11-30 23:51"
       }
     ],
@@ -426,6 +146,6 @@ let states = [
   "Latest"
 ];
 
-let items = [...items_, ...items_];
+let items = [...items_, ...items_, ...items_, ...items_, ...items_, ...items_];
 
 export { items, genres, states };
