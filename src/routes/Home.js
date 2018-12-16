@@ -16,25 +16,20 @@ import SearchBar from "../components/SearchBar/SearchBar";
 import SectionContainer from "../components/SectionContainer/SectionContainer";
 import GenreList from "../components/GenreList/GenreList";
 import PortraitList from "../components/PortraitList/PortraitList";
-import DetailedPortraitList from "../components/DetailedPortraitList/DetailedPortraitList";
+// import DetailedPortraitList from "../components/DetailedPortraitList/DetailedPortraitList";
+import DoubleColumnFlexList from "../components/DoubleColumnFlexList/DoubleColumnFlexList";
 import Footer from "../components/Footer/Footer";
+import DetailedItem from "../components/DetailedItem/DetailedItem";
 
 // import fetchHome from '../fetching/homeFetch' still working on it
 
 class Home extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      popularItems: [],
-      latestItems: []
-    };
-  }
-
   componentDidMount() {
     // fetchHome(); still working on it
   }
 
   render() {
+    let latestItemsToRender = items.map((v, i) => <DetailedItem manga={v} />);
     return (
       <div className="home-container">
         <div className="main-container">
@@ -52,7 +47,7 @@ class Home extends Component {
           </div>
           <div className="latest-manga-container-item">
             <SectionContainer icon={latIcon} title={"Latest Manga"} bg={"red"}>
-              <DetailedPortraitList items={items} />
+              <DoubleColumnFlexList items={latestItemsToRender} />
             </SectionContainer>
           </div>
           <div className="genres-manga-container-item">
