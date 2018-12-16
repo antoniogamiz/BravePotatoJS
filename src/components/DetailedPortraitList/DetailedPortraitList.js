@@ -9,7 +9,7 @@ export default ({items}) => (
         <div key={i} className="detailed-portrait-list__item">
             <DetailedItem manga={v}/>
         </div>
-    )}
+)}
     </div>
 );
 

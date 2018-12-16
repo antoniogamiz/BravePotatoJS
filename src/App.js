@@ -11,6 +11,7 @@ import NavBarMenuEntry from './components/NavBarMenuEntry/NavBarMenuEntry'
 import UserProfile from './components/UserProfile/UserProfile'
 
 import Home from './routes/Home'
+import TemplateManga from './routes/TemplateManga'
 
 let menuEntries = [ 
   NavBarMenuEntry( { url: "/", text: "Home" } ),
@@ -27,7 +28,7 @@ class App extends Component {
             <NavBar imgLogo={logo} imgLogoFont={logoFont} menuEntries={menuEntries}/>
             <Switch>
               <Route exact path="/" component={Home}/>
-              <Route exact path="/latest" render={() => <p>Latest!</p>}/>
+              <Route exact path="/latest" component={TemplateManga}/>
               <Route exact path="/completed" render={() => <p>Completed!</p>}/>
               <Route path="*" render={() => <p>Ups! Error :D</p>}/>
             </Switch>

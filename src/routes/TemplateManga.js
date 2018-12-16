@@ -1,20 +1,12 @@
 import React, { Component } from "react";
 
-import "./Home.css";
+import "./TemplateManga.css";
 
-import {
-  items,
-  genres,
-  portraits,
-  popIcon,
-  latIcon,
-  genIcon
-} from "../randomData";
+import { items, portraits, popIcon, latIcon } from "../randomData";
 
 // Components
 import SearchBar from "../components/SearchBar/SearchBar";
 import SectionContainer from "../components/SectionContainer/SectionContainer";
-import GenreList from "../components/GenreList/GenreList";
 import PortraitList from "../components/PortraitList/PortraitList";
 import DetailedPortraitList from "../components/DetailedPortraitList/DetailedPortraitList";
 import Footer from "../components/Footer/Footer";
@@ -36,8 +28,8 @@ class Home extends Component {
 
   render() {
     return (
-      <div className="home-container">
-        <div className="main-container">
+      <div className="latest-container">
+        <div className="latest-main-container">
           <div className="searchbar-container-item">
             <SearchBar />
           </div>
@@ -53,11 +45,6 @@ class Home extends Component {
           <div className="latest-manga-container-item">
             <SectionContainer icon={latIcon} title={"Latest Manga"} bg={"red"}>
               <DetailedPortraitList items={items} />
-            </SectionContainer>
-          </div>
-          <div className="genres-manga-container-item">
-            <SectionContainer icon={genIcon} title={"Genres"} bg={"#16a085"}>
-              <GenreList items={genres} />
             </SectionContainer>
           </div>
         </div>
