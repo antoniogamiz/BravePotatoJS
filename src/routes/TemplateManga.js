@@ -8,8 +8,9 @@ import { items, portraits, popIcon, latIcon } from "../randomData";
 import SearchBar from "../components/SearchBar/SearchBar";
 import SectionContainer from "../components/SectionContainer/SectionContainer";
 import PortraitList from "../components/PortraitList/PortraitList";
-import DetailedPortraitList from "../components/DetailedPortraitList/DetailedPortraitList";
+import DoubleColumnFlexList from "../components/DoubleColumnFlexList/DoubleColumnFlexList";
 import Footer from "../components/Footer/Footer";
+import SynopsisPortrait from "../components/SynopsisPortrait/SynopsisPortrait";
 
 // import fetchHome from '../fetching/homeFetch' still working on it
 
@@ -27,6 +28,9 @@ class Home extends Component {
   }
 
   render() {
+    let latestItemsToRender = items.map((v, i) => (
+      <SynopsisPortrait manga={v} />
+    ));
     return (
       <div className="latest-container">
         <div className="latest-main-container">
@@ -44,7 +48,7 @@ class Home extends Component {
           </div>
           <div className="latest-manga-container-item">
             <SectionContainer icon={latIcon} title={"Latest Manga"} bg={"red"}>
-              <DetailedPortraitList items={items} />
+              <DoubleColumnFlexList items={latestItemsToRender} />
             </SectionContainer>
           </div>
         </div>

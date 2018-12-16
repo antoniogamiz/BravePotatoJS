@@ -38,7 +38,9 @@ let items_ = [
         date: "11-30 23:51"
       }
     ],
-    src: mock1
+    src: mock1,
+    synopsis:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Est error provident consequatur distinctio delectus repellendus, facilis veritatis fugit, qui, aperiam repellat. Maiores molestiae vitae fugiat facere pariatur repellendus fugit molestias earum maxime ut, similique, iusto qui perferendis eos sed esse inventore culpa cum quisquam quas consectetur tempore animi distinctio quo. Tenetur illum laboriosam facilis molestiae officiis laudantium voluptatibus officia optio."
   },
   {
     title: "One Piece",
@@ -56,7 +58,9 @@ let items_ = [
         date: "11-30 23:51"
       }
     ],
-    src: mock2
+    src: mock2,
+    synopsis:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Est error provident consequatur distinctio delectus repellendus, facilis veritatis fugit, qui, aperiam repellat. Maiores molestiae vitae fugiat facere pariatur repellendus fugit molestias earum maxime ut, similique, iusto qui perferendis eos sed esse inventore culpa cum quisquam quas consectetur tempore animi distinctio quo. Tenetur illum laboriosam facilis molestiae officiis laudantium voluptatibus officia optio."
   },
   {
     title: "One Piece",
@@ -74,7 +78,9 @@ let items_ = [
         date: "11-30 23:51"
       }
     ],
-    src: mock3
+    src: mock3,
+    synopsis:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Est error provident consequatur distinctio delectus repellendus, facilis veritatis fugit, qui, aperiam repellat. Maiores molestiae vitae fugiat facere pariatur repellendus fugit molestias earum maxime ut, similique, iusto qui perferendis eos sed esse inventore culpa cum quisquam quas consectetur tempore animi distinctio quo. Tenetur illum laboriosam facilis molestiae officiis laudantium voluptatibus officia optio."
   },
   {
     title: "One Piece",
@@ -92,7 +98,9 @@ let items_ = [
         date: "11-30 23:51"
       }
     ],
-    src: mock4
+    src: mock4,
+    synopsis:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Est error provident consequatur distinctio delectus repellendus, facilis veritatis fugit, qui, aperiam repellat. Maiores molestiae vitae fugiat facere pariatur repellendus fugit molestias earum maxime ut, similique, iusto qui perferendis eos sed esse inventore culpa cum quisquam quas consectetur tempore animi distinctio quo. Tenetur illum laboriosam facilis molestiae officiis laudantium voluptatibus officia optio."
   }
 ];
 

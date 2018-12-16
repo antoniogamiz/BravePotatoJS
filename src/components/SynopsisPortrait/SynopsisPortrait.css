@@ -1,0 +1,54 @@
+.synopsis-portrait {
+  width: 100%;
+  display: flex;
+  height: 200px;
+  border: 1px solid pink;
+  padding: 10px;
+  background-color: lightslategray;
+}
+
+.synopsis-portrait__img {
+  width: 112px;
+  height: 175px;
+}
+
+.synopsis-portrait__wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 3px 15px;
+}
+
+.synopsis-portrait__title {
+  color: white;
+  text-decoration: none;
+}
+
+.synopsis-portrait__chapter {
+  color: white;
+  text-decoration: none;
+}
+
+.synopsis-portrait__views {
+  display: flex;
+  align-items: center;
+}
+
+.synopsis-portrait__counts {
+  color: white;
+}
+
+.synopsis-portrait__icon {
+  width: 15px;
+  height: 15px;
+  margin-right: 6px;
+}
+
+.synopsis-portrait__counts {
+}
+
+.synopsis-portrait__synopsis {
+  color: white;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: justify;
+}
