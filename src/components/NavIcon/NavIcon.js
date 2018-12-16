@@ -1,13 +1,13 @@
-import React from 'react';
+import React from "react";
 
-import './NavIcon.css';
+import "./NavIcon.css";
 
-export default ({icon, iconFont}) => (
-    <div className="nav-icon">
-        {/* eslint-disable-next-line */}
-        <a href="#">
-            <img className="nav-icon_img" src={icon} alt=""></img>
-            <img className="nav-icon_img" src={iconFont} alt=""></img>          
-        </a>
+export default ({ icon, iconFont }) => (
+  <div className="nav-icon">
+    {/* eslint-disable-next-line */}
+    <a href="#">
+      <img className="nav-icon_img" src={icon} alt="" />
+      <img className="nav-icon_img" src={iconFont} alt="" />
+    </a>
   </div>
 );

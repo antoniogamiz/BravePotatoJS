@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import './UserProfile.css';
+import React, { Component } from "react";
+import "./UserProfile.css";
 
 class UserProfile extends Component {
   render() {
@@ -11,10 +11,14 @@ class UserProfile extends Component {
         </div>
         {/* eslint-disable-next-line */}
         <a href="#">
-            <img className="user-profile__icon" src={profileImg} alt="user-profile"></img>
+          <img
+            className="user-profile__icon"
+            src={profileImg}
+            alt="user-profile"
+          />
         </a>
       </div>
-    );   
+    );
   }
 }
 

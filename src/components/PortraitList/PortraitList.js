@@ -1,9 +1,8 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 
-import './PortraitList.css';
+import "./PortraitList.css";
 
 class PortraitList extends Component {
-
   /**
    * This will be a HOC at some point.
    */
@@ -14,8 +13,8 @@ class PortraitList extends Component {
     this.portraits = this.props.portraits;
 
     this.state = {
-      portraits: [],
-    }
+      portraits: []
+    };
   }
 
   updatePortraitsList() {
@@ -27,28 +26,26 @@ class PortraitList extends Component {
 
   componentDidMount() {
     this.updatePortraitsList();
-    window.addEventListener('resize', this.updatePortraitsList.bind(this));
+    window.addEventListener("resize", this.updatePortraitsList.bind(this));
   }
 
   componentWillUnmount() {
-    window.removeEventListener('resize', this.updatePortraitsList.bind(this));
+    window.removeEventListener("resize", this.updatePortraitsList.bind(this));
   }
 
   render() {
-      const { portraits } = this.state;
-      return (
-        <div ref={this.target} className="portrait-list">
-        { portraits.map( (v,i) => 
-            <div key={i} className="portrait-list__item">
-                <img className="portrait-list__item__img" key={i} src={v} alt=""></img> 
-                <p className="portrait-list__item__name">One Piece Chapter aaaa</p>
-            </div>
-        )}
-        </div>
-      );   
+    const { portraits } = this.state;
+    return (
+      <div ref={this.target} className="portrait-list">
+        {portraits.map((v, i) => (
+          <div key={i} className="portrait-list__item">
+            <img className="portrait-list__item__img" key={i} src={v} alt="" />
+            <p className="portrait-list__item__name">One Piece Chapter aaaa</p>
+          </div>
+        ))}
+      </div>
+    );
   }
 }
 
 export default PortraitList;
-
-
