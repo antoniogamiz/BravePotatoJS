@@ -1,20 +1,38 @@
 .chapters-list-item {
-    display: flex;
-    justify-content: flex-start;
-    margin: 7px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5px;
+  /* border: 1px solid red; */
 }
 
-.chapters-list-item__text {
-    color: white;
-    width: 65%;
-    font-size: 13px;
-    white-space: nowrap; 
-    overflow: hidden;
-    text-overflow: ellipsis;
+.chapters-list-item__wrapper {
+  width: 50%;
+  display: fleX;
+  align-items: center;
+}
+
+.chapters-list-item__icon {
+  width: 9px;
+  height: 9px;
+  margin-right: 5px;
+}
+
+.chapters-list-item__link {
+  color: white;
+  font-size: 13px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-decoration: none;
+}
+
+.chapters-list-item__link:hover {
+  color: #be9dd1;
 }
 
 .chapters-list-item__date {
-    color: grey;
-    font-size: 11px;
+  color: grey;
+  font-size: 11px;
+  margin-right: 20px;
 }
-

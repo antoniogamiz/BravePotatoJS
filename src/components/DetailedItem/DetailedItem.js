@@ -5,7 +5,9 @@ import ChaptersList from "../ChaptersList/ChaptersList";
 
 export default ({ manga }) => (
   <div className="detailed-item">
-    <img className="detailed-item__img" src={manga.src} alt="" />
+    <a href="/">
+      <img className="detailed-item__img" src={manga.src} alt="" />
+    </a>
     <ChaptersList title={manga.title} chapters={manga.chapters} />
   </div>
 );
