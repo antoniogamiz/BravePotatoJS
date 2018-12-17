@@ -19,8 +19,8 @@ import PortraitList from "../components/PortraitList/PortraitList";
 // import DetailedPortraitList from "../components/DetailedPortraitList/DetailedPortraitList";
 import DoubleColumnFlexList from "../components/DoubleColumnFlexList/DoubleColumnFlexList";
 import Footer from "../components/Footer/Footer";
-import DetailedItem from "../components/DetailedItem/DetailedItem";
-
+import ChaptersList from "../components/ChaptersList/ChaptersList";
+import PortraitDisplay from "../components/PortraitDisplay/PortraitDisplay";
 // import fetchHome from '../fetching/homeFetch' still working on it
 
 class Home extends Component {
@@ -29,7 +29,11 @@ class Home extends Component {
   }
 
   render() {
-    let latestItemsToRender = items.map((v, i) => <DetailedItem manga={v} />);
+    let latestItemsToRender = items.map((v, i) => (
+      <PortraitDisplay src={v.src} size={{ width: "66px", height: "91px" }}>
+        <ChaptersList title={v.title} chapters={v.chapters} />
+      </PortraitDisplay>
+    ));
     return (
       <div className="home-container">
         <div className="main-container">
