@@ -2,9 +2,7 @@
   width: 100%;
   display: flex;
   height: 200px;
-  border: 1px solid pink;
   padding: 10px;
-  background-color: lightslategray;
 }
 
 .synopsis-portrait__img {
@@ -15,7 +13,7 @@
 .synopsis-portrait__wrapper {
   display: flex;
   flex-direction: column;
-  padding: 3px 15px;
+  padding: 7px 15px;
 }
 
 .synopsis-portrait__title {
@@ -25,12 +23,14 @@
 
 .synopsis-portrait__chapter {
   color: white;
+  font-size: 12px;
   text-decoration: none;
 }
 
 .synopsis-portrait__views {
   display: flex;
   align-items: center;
+  font-size: 13px;
 }
 
 .synopsis-portrait__counts {
@@ -48,7 +48,10 @@
 
 .synopsis-portrait__synopsis {
   color: white;
+  height: 50%;
   overflow: hidden;
   text-overflow: ellipsis;
   text-align: justify;
+  font-size: 13px;
+  padding: 2px 0;
 }
