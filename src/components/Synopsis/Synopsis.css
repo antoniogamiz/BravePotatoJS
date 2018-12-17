@@ -3,10 +3,11 @@
   flex-direction: column;
   padding: 7px 20px;
   padding-left: 0;
+  height: 190px;
 }
 
 .synopsis__title {
-  color: white;
+  color: #61dafb;
   text-decoration: none;
 }
 
@@ -34,7 +35,6 @@
 
 .synopsis__synopsis {
   color: white;
-  height: 50%;
   overflow: hidden;
   text-overflow: ellipsis;
   text-align: justify;
