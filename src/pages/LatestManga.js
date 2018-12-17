@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-import "./TemplateManga.css";
+import "./LatestManga.css";
 
 import { items, portraits, popIcon, latIcon } from "../randomData";
 
