@@ -10,7 +10,8 @@ import SectionContainer from "../components/SectionContainer/SectionContainer";
 import PortraitList from "../components/PortraitList/PortraitList";
 import DoubleColumnFlexList from "../components/DoubleColumnFlexList/DoubleColumnFlexList";
 import Footer from "../components/Footer/Footer";
-import SynopsisPortrait from "../components/SynopsisPortrait/SynopsisPortrait";
+import PortraitDisplay from "../components/PortraitDisplay/PortraitDisplay";
+import Synopsis from "../components/Synopsis/Synopsis";
 
 // import fetchHome from '../fetching/homeFetch' still working on it
 
@@ -29,7 +30,9 @@ class Home extends Component {
 
   render() {
     let latestItemsToRender = items.map((v, i) => (
-      <SynopsisPortrait manga={v} />
+      <PortraitDisplay src={v.src} size={{ width: "112px", height: "175px" }}>
+        <Synopsis manga={v} />
+      </PortraitDisplay>
     ));
     return (
       <div className="latest-container">

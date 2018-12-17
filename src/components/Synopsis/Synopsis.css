@@ -1,52 +1,38 @@
-.synopsis-portrait {
-  width: 100%;
-  display: flex;
-  height: 200px;
-  padding: 10px;
-}
-
-.synopsis-portrait__img {
-  width: 112px;
-  height: 175px;
-}
-
-.synopsis-portrait__wrapper {
+.synopsis__wrapper {
   display: flex;
   flex-direction: column;
-  padding: 7px 15px;
+  padding: 7px 20px;
+  padding-left: 0;
 }
 
-.synopsis-portrait__title {
+.synopsis__title {
   color: white;
   text-decoration: none;
 }
 
-.synopsis-portrait__chapter {
+.synopsis__chapter {
   color: white;
   font-size: 12px;
   text-decoration: none;
 }
 
-.synopsis-portrait__views {
+.synopsis__views {
   display: flex;
   align-items: center;
   font-size: 13px;
 }
 
-.synopsis-portrait__counts {
+.synopsis__counts {
   color: white;
 }
 
-.synopsis-portrait__icon {
+.synopsis__icon {
   width: 15px;
   height: 15px;
   margin-right: 6px;
 }
 
-.synopsis-portrait__counts {
-}
-
-.synopsis-portrait__synopsis {
+.synopsis__synopsis {
   color: white;
   height: 50%;
   overflow: hidden;
