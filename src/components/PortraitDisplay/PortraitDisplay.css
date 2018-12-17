@@ -1,0 +1,8 @@
+.portrait-display {
+  width: 100%;
+  display: flex;
+}
+
+.portrait-display__img {
+  margin-right: 15px;
+}
