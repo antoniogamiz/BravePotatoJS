@@ -1,0 +1,45 @@
+.completed-main-container {
+  margin: 20px 15%;
+  display: grid;
+  grid-template:
+    "search search" auto
+    "popular popular" auto
+    "latest latest" auto
+    "footer footer" auto
+    / 2fr 1fr;
+}
+
+.searchbar-container-item {
+  grid-area: search;
+  margin: 0 15%;
+  margin-bottom: 15px;
+}
+
+.popular-manga-container-item {
+  grid-area: popular;
+}
+
+.completed-manga-container-item {
+  grid-area: latest;
+  height: auto;
+}
+
+.footer-container-item {
+  grid-area: footer;
+}
+
+@media screen and (max-width: 1024px) {
+  .popular-manga-container-item {
+    display: none;
+  }
+  .tags-manga-container-item {
+    display: none;
+  }
+  .latest-main-container {
+    margin: 20px 0;
+    grid-template:
+      "latest" auto
+      "footer" auto
+      / 100%;
+  }
+}

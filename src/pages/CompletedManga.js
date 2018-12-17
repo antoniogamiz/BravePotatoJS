@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-import "./LatestManga.css";
+import "./CompletedManga.css";
 
 import { items, portraits, popIcon, latIcon } from "../randomData";
 
@@ -15,12 +15,12 @@ import Synopsis from "../components/Synopsis/Synopsis";
 
 // import fetchHome from '../fetching/homeFetch' still working on it
 
-class Latest extends Component {
+class Completed extends Component {
   constructor(props) {
     super(props);
     this.state = {
       popularItems: [],
-      latestItems: []
+      completedItems: []
     };
   }
 
@@ -29,14 +29,14 @@ class Latest extends Component {
   }
 
   render() {
-    let latestItemsToRender = items.map((v, i) => (
+    let completedItemsToRender = items.map((v, i) => (
       <PortraitDisplay src={v.src} size={{ width: "112px", height: "175px" }}>
         <Synopsis manga={v} />
       </PortraitDisplay>
     ));
     return (
-      <div className="latest-container">
-        <div className="latest-main-container">
+      <div className="completed-container">
+        <div className="completed-main-container">
           <div className="searchbar-container-item">
             <SearchBar />
           </div>
@@ -49,9 +49,13 @@ class Latest extends Component {
               <PortraitList portraits={portraits} />
             </SectionContainer>
           </div>
-          <div className="latest-manga-container-item">
-            <SectionContainer icon={latIcon} title={"Latest Manga"} bg={"red"}>
-              <DoubleColumnFlexList items={latestItemsToRender} />
+          <div className="completed-manga-container-item">
+            <SectionContainer
+              icon={latIcon}
+              title={"Completed Manga"}
+              bg={"red"}
+            >
+              <DoubleColumnFlexList items={completedItemsToRender} />
             </SectionContainer>
           </div>
         </div>
@@ -60,4 +64,4 @@ class Latest extends Component {
     );
   }
 }
-export default Latest;
+export default Completed;
