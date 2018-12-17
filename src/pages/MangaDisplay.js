@@ -1,40 +1,21 @@
 import React, { Component } from "react";
 
-import "./Home.css";
+import "./MangaDisplay.css";
 
-import {
-  items,
-  genres,
-  portraits,
-  popIcon,
-  latIcon,
-  genIcon
-} from "../randomData";
+import { genres, portraits, popIcon, latIcon, genIcon } from "../randomData";
 
 // Components
 import SearchBar from "../components/SearchBar/SearchBar";
 import SectionContainer from "../components/SectionContainer/SectionContainer";
 import GenreList from "../components/GenreList/GenreList";
 import PortraitList from "../components/PortraitList/PortraitList";
-import DoubleColumnFlexList from "../components/DoubleColumnFlexList/DoubleColumnFlexList";
+import MangaInfo from "../components/MangaInfo/MangaInfo";
 import Footer from "../components/Footer/Footer";
-import ChaptersList from "../components/ChaptersList/ChaptersList";
-import PortraitDisplay from "../components/PortraitDisplay/PortraitDisplay";
-// import fetchHome from '../fetching/homeFetch' still working on it
 
-class Home extends Component {
-  componentDidMount() {
-    // fetchHome(); still working on it
-  }
-
+class MangaDisplay extends Component {
   render() {
-    let latestItemsToRender = items.map((v, i) => (
-      <PortraitDisplay src={v.src} size={{ width: "66px", height: "91px" }}>
-        <ChaptersList title={v.title} chapters={v.chapters} />
-      </PortraitDisplay>
-    ));
     return (
-      <div className="home-container">
+      <div className="manga-display-container">
         <div className="main-container">
           <div className="searchbar-container-item">
             <SearchBar />
@@ -48,9 +29,9 @@ class Home extends Component {
               <PortraitList portraits={portraits} />
             </SectionContainer>
           </div>
-          <div className="latest-manga-container-item">
+          <div className="manga-container-item">
             <SectionContainer icon={latIcon} title={"Latest Manga"} bg={"red"}>
-              <DoubleColumnFlexList items={latestItemsToRender} />
+              <MangaInfo />
             </SectionContainer>
           </div>
           <div className="genres-manga-container-item">
@@ -64,4 +45,5 @@ class Home extends Component {
     );
   }
 }
-export default Home;
+
+export default MangaDisplay;

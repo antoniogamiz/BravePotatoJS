@@ -13,6 +13,7 @@ import UserProfile from "./components/UserProfile/UserProfile";
 import Home from "./pages/Home";
 import Latest from "./pages/LatestManga";
 import Completed from "./pages/CompletedManga";
+import MangaDisplay from "./pages/MangaDisplay";
 
 let menuEntries = [
   NavBarMenuEntry({ url: "/", text: "Home" }),
@@ -35,6 +36,7 @@ class App extends Component {
             <Route exact path="/" component={Home} />
             <Route exact path="/latest" component={Latest} />
             <Route exact path="/completed" component={Completed} />
+            <Route exact path="/manga" component={MangaDisplay} />
             <Route path="*" render={() => <p>Ups! Error :D</p>} />
           </Switch>
         </div>

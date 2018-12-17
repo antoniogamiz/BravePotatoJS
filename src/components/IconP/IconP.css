@@ -1,0 +1,8 @@
+.iconp-wrapper {
+  display: flex;
+}
+
+.iconp-wrapper__icon {
+  width: 30px;
+  height: 30px;
+}
