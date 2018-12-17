@@ -32,10 +32,8 @@
   .popular-manga-container-item {
     display: none;
   }
-  .tags-manga-container-item {
-    display: none;
-  }
-  .latest-main-container {
+
+  .completed-main-container {
     margin: 20px 0;
     grid-template:
       "latest" auto
