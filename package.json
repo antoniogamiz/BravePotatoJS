@@ -28,7 +28,10 @@
     "not op_mini all"
   ],
   "devDependencies": {
+    "cheerio": "^1.0.0-rc.2",
     "eslint-plugin-prettier": "^3.0.0",
+    "jsonframe": "0.0.2",
+    "jsonframe-cheerio": "^3.0.1",
     "prettier": "^1.15.3"
   }
 }
