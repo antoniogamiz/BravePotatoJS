@@ -16,8 +16,12 @@ function getNamesAndURLs(i) {
       });
     });
 
-    if (i <= 1) getNamesAndURLs(i + 1);
-    else {
+    if (i <= 901) {
+      console.log(`Scraping page ${i}`);
+      getNamesAndURLs(i + 1);
+    } else {
+      console.timeEnd("Getting 21621 data structure");
+      console.log(manga.length);
       let json = JSON.stringify(manga, null, 2);
       fs.writeFile("mangas.json", json, "utf8", function(err) {
         if (err) {
@@ -28,4 +32,5 @@ function getNamesAndURLs(i) {
   });
 }
 
+console.time("Getting 21621 data structure");
 getNamesAndURLs(1);
