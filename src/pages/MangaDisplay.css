@@ -1,4 +1,4 @@
-.main-container {
+.manga-main-container {
   margin: 20px 15%;
   display: grid;
   grid-template:
@@ -42,7 +42,7 @@
   .searchbar-container-item {
     display: none;
   }
-  .main-container {
+  .manga-main-container {
     margin: 20px 0;
     grid-template:
       "manga" auto

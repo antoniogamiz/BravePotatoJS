@@ -16,7 +16,7 @@ class MangaDisplay extends Component {
   render() {
     return (
       <div className="manga-display-container">
-        <div className="main-container">
+        <div className="manga-main-container">
           <div className="searchbar-container-item">
             <SearchBar />
           </div>
@@ -30,7 +30,7 @@ class MangaDisplay extends Component {
             </SectionContainer>
           </div>
           <div className="manga-container-item">
-            <SectionContainer icon={latIcon} title={"Latest Manga"} bg={"red"}>
+            <SectionContainer icon={latIcon} title={"Manga"} bg={"red"}>
               <MangaInfo />
             </SectionContainer>
           </div>

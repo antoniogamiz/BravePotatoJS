@@ -157,3 +157,50 @@ let states = [
 let items = [...items_, ...items_, ...items_, ...items_, ...items_, ...items_];
 
 export { items, genres, states };
+
+let chaptersList_ = [
+  {
+    title: "Chapter 394: Luffy and his epic aventures!",
+    views: "483",
+    date: "08-25 12:36"
+  },
+  {
+    title: "Chapter 394: Luffy and his epic aventures!",
+    views: "483",
+    date: "08-25 12:36"
+  },
+  {
+    title: "Chapter 394: Luffy and his epic aventures!",
+    views: "483",
+    date: "08-25 12:36"
+  },
+  {
+    title: "Chapter 394: Luffy and his epic aventures!",
+    views: "483",
+    date: "08-25 12:36"
+  },
+  {
+    title: "Chapter 394: Luffy and his epic aventures!",
+    views: "483",
+    date: "08-25 12:36"
+  }
+];
+
+let chaptersList = [
+  ...chaptersList_,
+  ...chaptersList_,
+  ...chaptersList_,
+  ...chaptersList_,
+  ...chaptersList_,
+  ...chaptersList_,
+  ...chaptersList_,
+  ...chaptersList_,
+  ...chaptersList_,
+  ...chaptersList_,
+  ...chaptersList_,
+  ...chaptersList_,
+  ...chaptersList_,
+  ...chaptersList_
+];
+
+export { chaptersList };

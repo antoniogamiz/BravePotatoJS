@@ -1,24 +1,28 @@
 .nav-bar {
-    background-color: black;
-    color: white;
-    padding: 0px 15%;
-    display: flex;
-    justify-content: space-between;
+  background-color: black;
+  color: white;
+  padding: 0px 15%;
+  display: flex;
+  justify-content: space-between;
 }
 
 /* === Mobile === */
 
 .nav-bar__desk-nav {
-    width: 100%;
-    display: block;
+  width: 100%;
+  display: block;
 }
 
 .nav-bar__mob-nav {
-    width: 100%;
-    display: none;
-}   
+  width: 100%;
+  display: none;
+}
 
 @media screen and (max-width: 1024px) {
-    .nav-bar__mob-nav { display: block; }
-    .nav-bar__desk-nav { display: none; }
+  .nav-bar__mob-nav {
+    display: block;
+  }
+  .nav-bar__desk-nav {
+    display: none;
+  }
 }
