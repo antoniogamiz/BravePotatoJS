@@ -14,7 +14,7 @@ function save(manga) {
   });
 }
 
-let N = 1;
+let N = 2;
 
 function getURLs(i) {
   if (i <= N) {
@@ -26,8 +26,7 @@ function getURLs(i) {
           url: $($(e).find("a")).attr("href")
         });
       });
-
-      console.log(`Scraping page (${i}/${N})`);
+      process.stdout.write(`Scraping page (${i}/${N})\r`);
       getURLs(i + 1);
     });
   } else {
@@ -43,7 +42,7 @@ let mangasInformation = [];
 
 function getMangaInformation(i) {
   if (i < manga.length) {
-    console.log(`Getting manga information (${i}/${manga.length})`);
+    process.stdout.write(`Getting manga information: (${i}/${manga.length})\r`);
     let url = manga[i]["url"];
     request({ uri: url }, function(error, response, body) {
       const $ = cheerio.load(body);
