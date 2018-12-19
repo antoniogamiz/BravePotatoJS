@@ -42,7 +42,9 @@ let mangasInformation = [];
 
 function getMangaInformation(i) {
   if (i < manga.length) {
-    process.stdout.write(`Getting manga information: (${i}/${manga.length})\r`);
+    process.stdout.write(
+      `Getting manga information: (${i + 1}/${manga.length})\r`
+    );
     let url = manga[i]["url"];
     request({ uri: url }, function(error, response, body) {
       const $ = cheerio.load(body);
@@ -96,6 +98,53 @@ function getMangaInformation(i) {
   } else {
     console.log("Getting manga information finished.");
     console.timeEnd("second-step");
+    console.log("Getting manga images links...");
+    console.time("third-step");
+    getChapterImgLinks(0, 0);
+  }
+}
+
+function getChapterImgLinks(i, j) {
+  if (i < mangasInformation.length) {
+    process.stdout.write(
+      `Getting manga images link: Manga: (${i}/${
+        manga.length
+      }) Chapter: (${j}/${mangasInformation[i].chaptersList.length})\r`
+    );
+    if (mangasInformation[i].chaptersList[j]) {
+      let url = mangasInformation[i].chaptersList[j]["url"];
+      request({ uri: url }, function(error, response, body) {
+        const $ = cheerio.load(body);
+
+        mangasInformation[i].chaptersList[j]["size"] = $(
+          ".vungdoc"
+        ).children().length;
+        mangasInformation[i].chaptersList[j]["baseURL"] = $(
+          $("#vungdoc").children()[0]
+        )
+          .attr("src")
+          .split(/\/\d+\.jpg/)[0];
+
+        let fakePositives = 0;
+        $("#vungdoc")
+          .children()
+          .each((i, e) => {
+            if (!$(e).attr("src")) fakePositives++;
+          });
+        mangasInformation[i].chaptersList[j]["size"] -= fakePositives;
+
+        if (j === mangasInformation[i].chaptersList.length)
+          getChapterImgLinks(i + 1, 0);
+        else getChapterImgLinks(i, j + 1);
+      });
+    } else {
+      if (j === mangasInformation[i].chaptersList.length)
+        getChapterImgLinks(i + 1, 0);
+      else getChapterImgLinks(i, j + 1);
+    }
+  } else {
+    console.log("Getting manga images finished.");
+    console.timeEnd("third-step");
     save(mangasInformation);
   }
 }
