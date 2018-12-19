@@ -14,7 +14,7 @@ function save(manga) {
   });
 }
 
-let N = 2;
+let N = 1;
 
 function getURLs(i) {
   if (i <= N) {
@@ -64,6 +64,7 @@ function getMangaInformation(i) {
           });
         }
       });
+
       mangasInformation.push({
         title: titleAndAlternative[0],
         url: url,
@@ -71,6 +72,7 @@ function getMangaInformation(i) {
         author: $(children[1])
           .text()
           .split("Author(s) :\n")[1],
+        portrait: $($(".manga-info-pic").children()[0]).attr("src"),
         status: $(children[2])
           .text()
           .split("Status : ")[1],
