@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 
 import "./App.css";
 
@@ -25,22 +25,20 @@ let menuEntries = [
 class App extends Component {
   render() {
     return (
-      <Router>
-        <div>
-          <NavBar
-            imgLogo={logo}
-            imgLogoFont={logoFont}
-            menuEntries={menuEntries}
-          />
-          <Switch>
-            <Route exact path="/" component={Home} />
-            <Route exact path="/latest" component={Latest} />
-            <Route exact path="/completed" component={Completed} />
-            <Route exact path="/manga" component={MangaDisplay} />
-            <Route path="*" render={() => <p>Ups! Error :D</p>} />
-          </Switch>
-        </div>
-      </Router>
+      <div>
+        <NavBar
+          imgLogo={logo}
+          imgLogoFont={logoFont}
+          menuEntries={menuEntries}
+        />
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route exact path="/latest" component={Latest} />
+          <Route exact path="/completed" component={Completed} />
+          <Route exact path="/manga" component={MangaDisplay} />
+          <Route path="*" render={() => <p>Ups! Error :D</p>} />
+        </Switch>
+      </div>
     );
   }
 }

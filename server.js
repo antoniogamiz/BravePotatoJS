@@ -1,3 +1,4 @@
+const path = require("path");
 const express = require("express");
 const MongoClient = require("mongodb").MongoClient;
 const bodyParser = require("body-parser");
@@ -7,6 +8,12 @@ const app = express();
 const port = 3000;
 
 app.use(bodyParser.urlencoded({ extended: true }));
+
+app.use(express.static(path.join(__dirname, "dist")));
+
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname + "dist/index.html"));
+});
 
 MongoClient.connect(
   db.url,

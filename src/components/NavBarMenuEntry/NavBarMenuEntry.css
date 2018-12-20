@@ -9,6 +9,8 @@
   text-decoration: none;
   align-self: center;
   vertical-align: middle;
+  border: none;
+  background-color: black;
 }
 
 .nav-bar-menu-entry:hover {
