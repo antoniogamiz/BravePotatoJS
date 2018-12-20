@@ -29,6 +29,7 @@ app.get("*", (req, res) => {
 //     });
 //   }
 // );
+
 app.use(bodyParser.json());
 
 mongoose.connect("mongodb://localhost:27017/testing");

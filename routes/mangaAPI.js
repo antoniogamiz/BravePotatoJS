@@ -16,7 +16,6 @@ module.exports = function(app) {
 
   app.post("/api/manga", (req, res) => {
     const data = req.body.data;
-    console.log(req.body);
     const manga = new Manga({
       title: data.title,
       url: data.url,
@@ -34,8 +33,9 @@ module.exports = function(app) {
     manga
       .save()
       .then(() => {
-        res.json(manga);
-        console.log("ddd");
+        // res.json(manga);
+        // console.log("ddd");
+        res.send({ error: "An error has occurred (/api/manga post)" });
       })
       .catch(err =>
         res.send({ error: "An error has occurred (/api/manga post)" })

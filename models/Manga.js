@@ -1,16 +1,16 @@
 const mongoose = require("mongoose");
 
 const MangaSchema = new mongoose.Schema({
-  title: { type: String, default: "Not found." },
-  url: { type: String, default: "Not found." },
-  alternativeTitle: { type: String, default: "Not found." },
-  author: { type: String, default: "Not found." },
-  portrait: { type: String, default: "Not found." },
-  status: { type: String, default: "Not found." },
-  lastUpdated: { type: String, default: "Not found." },
-  views: { type: String, default: "Not found." },
-  genres: { type: String, default: "Not found." },
-  synopsis: { type: String, default: "Not found." },
+  title: { type: String, require: true },
+  url: { type: String, require: true },
+  alternativeTitle: { type: String, require: true },
+  author: { type: String, require: true },
+  portrait: { type: String, require: true },
+  status: { type: String, require: true },
+  lastUpdated: { type: String, require: true },
+  views: { type: String, require: true },
+  genres: { type: String, require: true },
+  synopsis: { type: String, require: true },
   chaptersList: {
     type: [
       {
@@ -20,7 +20,7 @@ const MangaSchema = new mongoose.Schema({
         baseURL: String
       }
     ],
-    default: []
+    require: true
   }
 });
 

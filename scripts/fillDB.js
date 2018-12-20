@@ -14,8 +14,8 @@ axios
     }
   )
   .then(function(response) {
-    console.log("Success");
+    console.log(response.data.error);
   })
   .catch(function(error) {
-    console.log(error.data);
+    console.log(error.error);
   });
