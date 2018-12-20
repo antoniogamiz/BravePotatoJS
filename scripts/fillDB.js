@@ -1,7 +1,7 @@
 const fs = require("fs");
 const axios = require("axios");
 
-var manga = JSON.parse(fs.readFileSync("./mangas.json", "utf8"));
+let manga = JSON.parse(fs.readFileSync("./mangas.json", "utf8"));
 
 axios
   .post(
@@ -14,7 +14,13 @@ axios
     }
   )
   .then(function(response) {
-    console.log(response.data.error);
+    if (response.data.status === "repeated") {
+      console.log(
+        `Manga with title: ${manga[0].title} is already in the database.`
+      );
+    } else {
+      if (response.data.status === "success") console.log("Manga added.");
+    }
   })
   .catch(function(error) {
     console.log(error.error);
