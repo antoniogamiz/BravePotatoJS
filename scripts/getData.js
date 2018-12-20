@@ -34,7 +34,7 @@ function getURLs(i) {
     console.timeEnd("first-step");
     console.log("Getting manga information...");
     console.time("second-step");
-    manga = manga.slice(0, 12);
+    manga = manga.slice(0, 1);
     getMangaInformation(0);
   }
 }
@@ -118,7 +118,7 @@ function getChapterImgLinks(i, j) {
         const $ = cheerio.load(body);
 
         mangasInformation[i].chaptersList[j]["size"] = $(
-          ".vungdoc"
+          "#vungdoc"
         ).children().length;
         mangasInformation[i].chaptersList[j]["baseURL"] = $(
           $("#vungdoc").children()[0]
@@ -132,6 +132,8 @@ function getChapterImgLinks(i, j) {
           .each((i, e) => {
             if (!$(e).attr("src")) fakePositives++;
           });
+        // console.log(`Length: ${mangasInformation[i].chaptersList[j]["size"]}`);
+        // console.log(`FakePositives: ${fakePositives}`);
         mangasInformation[i].chaptersList[j]["size"] -= fakePositives;
 
         if (j === mangasInformation[i].chaptersList.length)
