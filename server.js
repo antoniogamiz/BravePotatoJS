@@ -9,9 +9,10 @@ const mongoose = require("mongoose");
 const app = express();
 const port = 3000;
 
-app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, "dist")));
-app.use(bodyParser.json());
+
+app.use(bodyParser.json({ limit: "50mb" }));
+app.use(bodyParser.urlencoded({ limit: "50mb", extended: true }));
 
 require("./routes")(app);
 app.get("*", (req, res) => {
