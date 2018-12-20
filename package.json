@@ -4,6 +4,8 @@
   "private": true,
   "dependencies": {
     "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "mongodb": "^3.1.10",
     "node-fetch": "^2.3.0",
     "node-html-parser": "^1.1.11",
     "react": "^16.6.3",
@@ -16,7 +18,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "dev": "nodemon server.js"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -32,6 +35,7 @@
     "eslint-plugin-prettier": "^3.0.0",
     "jsonframe": "0.0.2",
     "jsonframe-cheerio": "^3.0.1",
+    "nodemon": "^1.18.9",
     "prettier": "^1.15.3"
   }
 }
