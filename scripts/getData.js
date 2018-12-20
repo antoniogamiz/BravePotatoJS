@@ -34,6 +34,7 @@ function getURLs(i) {
     console.timeEnd("first-step");
     console.log("Getting manga information...");
     console.time("second-step");
+    manga = manga.slice(0, 12);
     getMangaInformation(0);
   }
 }
