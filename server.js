@@ -13,7 +13,8 @@ MongoClient.connect(
   { useNewUrlParser: true },
   (err, database) => {
     if (err) return console.log(err);
-    require("./routes")(app, database);
+    const DB = database.db("testing");
+    require("./routes")(app, DB);
     app.listen(port, () => {
       console.log(`Listening on port ${port}`);
     });
