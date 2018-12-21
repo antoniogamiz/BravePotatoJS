@@ -4,8 +4,12 @@ const request = require("request");
 const cheerio = require("cheerio");
 const syncRequest = require("sync-request");
 
-let secondStep = JSON.parse(fs.readFileSync("./data/secondStep.json", "utf8"));
-let manga = JSON.parse(fs.readFileSync("./data/firstStep.json", "utf8"));
+let secondStep = JSON.parse(
+  fs.readFileSync("./scripts/data/secondStep.json", "utf8")
+);
+let manga = JSON.parse(
+  fs.readFileSync("./scripts/data/firstStep.json", "utf8")
+);
 
 const getInfo = (url, body) => {
   const $ = cheerio.load(body);
@@ -88,7 +92,7 @@ const getMangaInfo = i => {
           if (err) console.log(err);
           console.log(`http://localhost:3000/api/manga?title=${info.title}`);
           if (!JSON.parse(response.body).status) {
-            for (let j = 0; j < 20; j++) {
+            for (let j = 0; j < info.chaptersList.length; j++) {
               process.stdout.write(
                 `Current chapter: (${j}/${info.chaptersList.length})\r`
               );
@@ -106,7 +110,7 @@ const getMangaInfo = i => {
                 next: i + 1,
                 size: manga.length
               },
-              "./data/secondStep.json"
+              "./scripts/data/secondStep.json"
             );
           }
           getMangaInfo(i + 1);

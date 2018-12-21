@@ -20,13 +20,13 @@ const getMangaURLs = i => {
     });
   } else {
     console.log("Getting URLs finished.");
-    utils.save(firstStep, "./data/firstStep.json");
+    utils.save(firstStep, "./scripts/data/firstStep.json");
     utils.save(
       {
         next: 0,
         size: firstStep.length
       },
-      "./data/secondStep.json"
+      "./scripts/data/secondStep.json"
     );
   }
 };
