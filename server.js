@@ -1,8 +1,7 @@
 const path = require("path");
 const express = require("express");
-const MongoClient = require("mongodb").MongoClient;
 const bodyParser = require("body-parser");
-const db = require("./config/db");
+// const db = require("./config/db");
 
 const mongoose = require("mongoose");
 
