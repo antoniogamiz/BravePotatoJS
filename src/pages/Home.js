@@ -20,17 +20,29 @@ import DoubleColumnFlexList from "../components/DoubleColumnFlexList/DoubleColum
 import Footer from "../components/Footer/Footer";
 import ChaptersList from "../components/ChaptersList/ChaptersList";
 import PortraitDisplay from "../components/PortraitDisplay/PortraitDisplay";
-// import fetchHome from '../fetching/homeFetch' still working on it
 
 class Home extends Component {
+  state = {
+    data: []
+  };
+
   componentDidMount() {
-    // fetchHome(); still working on it
+    fetch("http://localhost:3000/api/manga?fill=20")
+      .then(response => {
+        return response.json();
+      })
+      .then(json => {
+        this.setState({ data: json });
+      });
   }
 
   render() {
-    let latestItemsToRender = items.map((v, i) => (
-      <PortraitDisplay src={v.src} size={{ width: "66px", height: "91px" }}>
-        <ChaptersList title={v.title} chapters={v.chapters} />
+    let latestItemsToRender = this.state.data.map((v, i) => (
+      <PortraitDisplay
+        src={v.portrait}
+        size={{ width: "66px", height: "91px" }}
+      >
+        <ChaptersList title={v.title} chapters={v.chaptersList} />
       </PortraitDisplay>
     ));
     return (
@@ -41,7 +53,7 @@ class Home extends Component {
           </div>
           <div className="popular-manga-container-item">
             <SectionContainer
-              icon={popIcon}
+              icon={"/theme/img/popular.svg"}
               title={"Popular Manga"}
               bg={"rgb(140, 132, 185)"}
             >
@@ -49,12 +61,20 @@ class Home extends Component {
             </SectionContainer>
           </div>
           <div className="latest-manga-container-item">
-            <SectionContainer icon={latIcon} title={"Latest Manga"} bg={"red"}>
+            <SectionContainer
+              icon={"/theme/img/stopwatch.svg"}
+              title={"Latest Manga"}
+              bg={"red"}
+            >
               <DoubleColumnFlexList items={latestItemsToRender} />
             </SectionContainer>
           </div>
           <div className="genres-manga-container-item">
-            <SectionContainer icon={genIcon} title={"Genres"} bg={"#16a085"}>
+            <SectionContainer
+              icon={"/theme/img/price-tag.svg"}
+              title={"Genres"}
+              bg={"#16a085"}
+            >
               <GenreList items={genres} />
             </SectionContainer>
           </div>

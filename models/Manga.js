@@ -1,5 +1,7 @@
 const mongoose = require("mongoose");
 
+const random = require("mongoose-simple-random");
+
 const MangaSchema = new mongoose.Schema({
   title: { type: String, require: true },
   url: { type: String, require: true },
@@ -23,5 +25,7 @@ const MangaSchema = new mongoose.Schema({
     require: true
   }
 });
+
+MangaSchema.plugin(random);
 
 module.exports = mongoose.model("Manga", MangaSchema);

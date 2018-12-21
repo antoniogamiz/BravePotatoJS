@@ -8,10 +8,13 @@ export default ({ chapter }) => (
   <div className="chapters-list-item">
     <div className="chapters-list-item__wrapper">
       <img className="chapters-list-item__icon" src={icon} alt="" />
-      <a href="/" className="chapters-list-item__link">
-        {chapter.name}
+      <a
+        href={`/api/manga?chapterid=${chapter._id}`}
+        className="chapters-list-item__link"
+      >
+        {chapter.title}
       </a>
     </div>
-    <i className="chapters-list-item__date">{chapter.date}</i>
+    <i className="chapters-list-item__date">{"---"}</i>
   </div>
 );
