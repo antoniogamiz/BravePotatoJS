@@ -25,12 +25,21 @@ class Latest extends Component {
   }
 
   componentDidMount() {
-    // fetchHome(); still working on it
+    fetch(
+      "https://manga-cradle.com/api/v1/manga?fields=title+portrait+views+synopsis+chaptersList"
+    )
+      .then(result => result.json())
+      .then(result => {
+        this.setState({ latestItems: result });
+      });
   }
 
   render() {
-    let latestItemsToRender = items.map((v, i) => (
-      <PortraitDisplay src={v.src} size={{ width: "112px", height: "175px" }}>
+    let latestItemsToRender = this.state.latestItems.map((v, i) => (
+      <PortraitDisplay
+        src={v.portrait}
+        size={{ width: "112px", height: "175px" }}
+      >
         <Synopsis manga={v} />
       </PortraitDisplay>
     ));

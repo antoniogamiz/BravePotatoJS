@@ -27,7 +27,9 @@ class Home extends Component {
   };
 
   componentDidMount() {
-    fetch("http://localhost:3000/api/manga?fill=20")
+    fetch(
+      "https://manga-cradle.com/api/v1/manga?fields=title+portrait+chaptersList"
+    )
       .then(response => {
         return response.json();
       })
@@ -53,7 +55,7 @@ class Home extends Component {
           </div>
           <div className="popular-manga-container-item">
             <SectionContainer
-              icon={"/theme/img/popular.svg"}
+              icon={popIcon}
               title={"Popular Manga"}
               bg={"rgb(140, 132, 185)"}
             >
@@ -61,20 +63,12 @@ class Home extends Component {
             </SectionContainer>
           </div>
           <div className="latest-manga-container-item">
-            <SectionContainer
-              icon={"/theme/img/stopwatch.svg"}
-              title={"Latest Manga"}
-              bg={"red"}
-            >
+            <SectionContainer icon={latIcon} title={"Latest Manga"} bg={"red"}>
               <DoubleColumnFlexList items={latestItemsToRender} />
             </SectionContainer>
           </div>
           <div className="genres-manga-container-item">
-            <SectionContainer
-              icon={"/theme/img/price-tag.svg"}
-              title={"Genres"}
-              bg={"#16a085"}
-            >
+            <SectionContainer icon={genIcon} title={"Genres"} bg={"#16a085"}>
               <GenreList items={genres} />
             </SectionContainer>
           </div>

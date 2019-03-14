@@ -8,7 +8,7 @@ export default ({ title, chapters }) => (
     <li key={"title"} className="chapters-list__title">
       {title}
     </li>
-    {chapters.map((v, i) => (
+    {chapters.slice(0, 3).map((v, i) => (
       <li key={i}>
         <ChaptersListItem chapter={v} />
       </li>

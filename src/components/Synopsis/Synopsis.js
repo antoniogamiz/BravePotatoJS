@@ -10,11 +10,11 @@ export default ({ manga }) => (
       {manga.title}
     </a>
     <a className="synopsis__chapter" href="/">
-      {manga.chapters[0].name}
+      {manga.chaptersList[0].title}
     </a>
     <div className="synopsis__views">
       <img className="synopsis__icon" src={icon} alt="" />
-      <p className="synopsis__counts">12.939.595</p>
+      <p className="synopsis__counts">{manga.views}</p>
     </div>
     <p className="synopsis__synopsis">{manga.synopsis}</p>
   </div>
