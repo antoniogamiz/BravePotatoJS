@@ -48,32 +48,29 @@ class Home extends Component {
       </PortraitDisplay>
     ));
     return (
-      <div className="home-container">
-        <div className="main-container">
-          <div className="searchbar-container-item">
-            <SearchBar />
-          </div>
-          <div className="popular-manga-container-item">
-            <SectionContainer
-              icon={popIcon}
-              title={"Popular Manga"}
-              bg={"rgb(140, 132, 185)"}
-            >
-              <PortraitList portraits={portraits} />
-            </SectionContainer>
-          </div>
-          <div className="latest-manga-container-item">
-            <SectionContainer icon={latIcon} title={"Latest Manga"} bg={"red"}>
-              <DoubleColumnFlexList items={latestItemsToRender} />
-            </SectionContainer>
-          </div>
-          <div className="genres-manga-container-item">
-            <SectionContainer icon={genIcon} title={"Genres"} bg={"#16a085"}>
-              <GenreList items={genres} />
-            </SectionContainer>
-          </div>
+      <div className="main-container">
+        <div className="searchbar-container-item">
+          <SearchBar />
         </div>
-        <Footer />
+        <div className="popular-manga-container-item">
+          <SectionContainer
+            icon={popIcon}
+            title={"Popular Manga"}
+            bg={"rgb(140, 132, 185)"}
+          >
+            <PortraitList portraits={portraits} />
+          </SectionContainer>
+        </div>
+        <div className="latest-manga-container-item">
+          <SectionContainer icon={latIcon} title={"Latest Manga"} bg={"red"}>
+            <DoubleColumnFlexList items={latestItemsToRender} />
+          </SectionContainer>
+        </div>
+        <div className="genres-manga-container-item">
+          <SectionContainer icon={genIcon} title={"Genres"} bg={"#16a085"}>
+            <GenreList items={genres} />
+          </SectionContainer>
+        </div>
       </div>
     );
   }

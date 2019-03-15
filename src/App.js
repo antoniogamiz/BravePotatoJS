@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { Route, Switch } from "react-router-dom";
 
 import "./App.css";
 
@@ -9,11 +8,7 @@ import { logoFont, logo, userIcon } from "./randomData";
 import NavBar from "./components/NavBar/NavBar";
 import NavBarMenuEntry from "./components/NavBarMenuEntry/NavBarMenuEntry";
 import UserProfile from "./components/UserProfile/UserProfile";
-
-import Home from "./pages/Home";
-import Latest from "./pages/LatestManga";
-import Completed from "./pages/CompletedManga";
-import MangaDisplay from "./pages/MangaDisplay";
+import Footer from "./components/Footer/Footer";
 
 let menuEntries = [
   NavBarMenuEntry({ url: "/", text: "Home" }),
@@ -31,13 +26,8 @@ class App extends Component {
           imgLogoFont={logoFont}
           menuEntries={menuEntries}
         />
-        <Switch>
-          <Route exact path="/" component={Home} />
-          <Route exact path="/latest" component={Latest} />
-          <Route exact path="/completed" component={Completed} />
-          <Route exact path="/manga" component={MangaDisplay} />
-          <Route path="*" render={() => <p>Ups! Error :D</p>} />
-        </Switch>
+        {this.props.children}
+        <Footer />
       </div>
     );
   }

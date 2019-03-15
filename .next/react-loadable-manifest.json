@@ -1,0 +1,278 @@
+{
+  "./noop": [
+    {
+      "id": "./node_modules/next/dist/client/noop.js",
+      "name": "./node_modules/next/dist/client/noop.js",
+      "file": "static/chunks/0.js",
+      "publicPath": "static/chunks/0.js"
+    }
+  ],
+  "./PortraitDisplay.css": [
+    {
+      "id": "./src/components/PortraitDisplay/PortraitDisplay.css",
+      "name": "./src/components/PortraitDisplay/PortraitDisplay.css",
+      "file": "static/chunks/styles.js",
+      "publicPath": "static/chunks/styles.js"
+    }
+  ],
+  "undefined": [
+    {
+      "id": 11,
+      "name": null,
+      "file": "static/chunks/styles.js",
+      "publicPath": "static/chunks/styles.js"
+    },
+    {
+      "id": 6,
+      "name": null,
+      "file": "static/chunks/styles.js",
+      "publicPath": "static/chunks/styles.js"
+    },
+    {
+      "id": 2,
+      "name": null,
+      "file": "static/chunks/styles.js",
+      "publicPath": "static/chunks/styles.js"
+    },
+    {
+      "id": 4,
+      "name": null,
+      "file": "static/chunks/styles.js",
+      "publicPath": "static/chunks/styles.js"
+    },
+    {
+      "id": 12,
+      "name": null,
+      "file": "static/chunks/styles.js",
+      "publicPath": "static/chunks/styles.js"
+    },
+    {
+      "id": 7,
+      "name": null,
+      "file": "static/chunks/styles.js",
+      "publicPath": "static/chunks/styles.js"
+    },
+    {
+      "id": 13,
+      "name": null,
+      "file": "static/chunks/styles.js",
+      "publicPath": "static/chunks/styles.js"
+    },
+    {
+      "id": 3,
+      "name": null,
+      "file": "static/chunks/styles.js",
+      "publicPath": "static/chunks/styles.js"
+    },
+    {
+      "id": 14,
+      "name": null,
+      "file": "static/chunks/styles.js",
+      "publicPath": "static/chunks/styles.js"
+    },
+    {
+      "id": 8,
+      "name": null,
+      "file": "static/chunks/styles.js",
+      "publicPath": "static/chunks/styles.js"
+    },
+    {
+      "id": 15,
+      "name": null,
+      "file": "static/chunks/styles.js",
+      "publicPath": "static/chunks/styles.js"
+    },
+    {
+      "id": 5,
+      "name": null,
+      "file": "static/chunks/styles.js",
+      "publicPath": "static/chunks/styles.js"
+    },
+    {
+      "id": 16,
+      "name": null,
+      "file": "static/chunks/styles.js",
+      "publicPath": "static/chunks/styles.js"
+    },
+    {
+      "id": 9,
+      "name": null,
+      "file": "static/chunks/styles.js",
+      "publicPath": "static/chunks/styles.js"
+    },
+    {
+      "id": 17,
+      "name": null,
+      "file": "static/chunks/styles.js",
+      "publicPath": "static/chunks/styles.js"
+    },
+    {
+      "id": 18,
+      "name": null,
+      "file": "static/chunks/styles.js",
+      "publicPath": "static/chunks/styles.js"
+    },
+    {
+      "id": 10,
+      "name": null,
+      "file": "static/chunks/styles.js",
+      "publicPath": "static/chunks/styles.js"
+    },
+    {
+      "id": 19,
+      "name": null,
+      "file": "static/chunks/styles.js",
+      "publicPath": "static/chunks/styles.js"
+    },
+    {
+      "id": 20,
+      "name": null,
+      "file": "static/chunks/styles.js",
+      "publicPath": "static/chunks/styles.js"
+    }
+  ],
+  "./NavBar.css": [
+    {
+      "id": "./src/components/NavBar/NavBar.css",
+      "name": "./src/components/NavBar/NavBar.css",
+      "file": "static/chunks/styles.js",
+      "publicPath": "static/chunks/styles.js"
+    }
+  ],
+  "./NavBarList.css": [
+    {
+      "id": "./src/components/NavBarList/NavBarList.css",
+      "name": "./src/components/NavBarList/NavBarList.css",
+      "file": "static/chunks/styles.js",
+      "publicPath": "static/chunks/styles.js"
+    }
+  ],
+  "./NavIcon.css": [
+    {
+      "id": "./src/components/NavIcon/NavIcon.css",
+      "name": "./src/components/NavIcon/NavIcon.css",
+      "file": "static/chunks/styles.js",
+      "publicPath": "static/chunks/styles.js"
+    }
+  ],
+  "./MobNavBar.css": [
+    {
+      "id": "./src/components/MobNavBar/MobNavBar.css",
+      "name": "./src/components/MobNavBar/MobNavBar.css",
+      "file": "static/chunks/styles.js",
+      "publicPath": "static/chunks/styles.js"
+    }
+  ],
+  "./NavBarMenuEntry.css": [
+    {
+      "id": "./src/components/NavBarMenuEntry/NavBarMenuEntry.css",
+      "name": "./src/components/NavBarMenuEntry/NavBarMenuEntry.css",
+      "file": "static/chunks/styles.js",
+      "publicPath": "static/chunks/styles.js"
+    }
+  ],
+  "./UserProfile.css": [
+    {
+      "id": "./src/components/UserProfile/UserProfile.css",
+      "name": "./src/components/UserProfile/UserProfile.css",
+      "file": "static/chunks/styles.js",
+      "publicPath": "static/chunks/styles.js"
+    }
+  ],
+  "./Footer.css": [
+    {
+      "id": "./src/components/Footer/Footer.css",
+      "name": "./src/components/Footer/Footer.css",
+      "file": "static/chunks/styles.js",
+      "publicPath": "static/chunks/styles.js"
+    }
+  ],
+  "./App.css": [
+    {
+      "id": "./src/App.css",
+      "name": "./src/App.css",
+      "file": "static/chunks/styles.js",
+      "publicPath": "static/chunks/styles.js"
+    }
+  ],
+  "./SearchBar.css": [
+    {
+      "id": "./src/components/SearchBar/SearchBar.css",
+      "name": "./src/components/SearchBar/SearchBar.css",
+      "file": "static/chunks/styles.js",
+      "publicPath": "static/chunks/styles.js"
+    }
+  ],
+  "./SectionContainer.css": [
+    {
+      "id": "./src/components/SectionContainer/SectionContainer.css",
+      "name": "./src/components/SectionContainer/SectionContainer.css",
+      "file": "static/chunks/styles.js",
+      "publicPath": "static/chunks/styles.js"
+    }
+  ],
+  "./TitleBar.css": [
+    {
+      "id": "./src/components/TitleBar/TitleBar.css",
+      "name": "./src/components/TitleBar/TitleBar.css",
+      "file": "static/chunks/styles.js",
+      "publicPath": "static/chunks/styles.js"
+    }
+  ],
+  "./GenreList.css": [
+    {
+      "id": "./src/components/GenreList/GenreList.css",
+      "name": "./src/components/GenreList/GenreList.css",
+      "file": "static/chunks/styles.js",
+      "publicPath": "static/chunks/styles.js"
+    }
+  ],
+  "./PortraitList.css": [
+    {
+      "id": "./src/components/PortraitList/PortraitList.css",
+      "name": "./src/components/PortraitList/PortraitList.css",
+      "file": "static/chunks/styles.js",
+      "publicPath": "static/chunks/styles.js"
+    }
+  ],
+  "./DoubleColumnFlexList.css": [
+    {
+      "id": "./src/components/DoubleColumnFlexList/DoubleColumnFlexList.css",
+      "name": "./src/components/DoubleColumnFlexList/DoubleColumnFlexList.css",
+      "file": "static/chunks/styles.js",
+      "publicPath": "static/chunks/styles.js"
+    }
+  ],
+  "./ChaptersList.css": [
+    {
+      "id": "./src/components/ChaptersList/ChaptersList.css",
+      "name": "./src/components/ChaptersList/ChaptersList.css",
+      "file": "static/chunks/styles.js",
+      "publicPath": "static/chunks/styles.js"
+    }
+  ],
+  "./ChaptersListItem.css": [
+    {
+      "id": "./src/components/ChaptersListItem/ChaptersListItem.css",
+      "name": "./src/components/ChaptersListItem/ChaptersListItem.css",
+      "file": "static/chunks/styles.js",
+      "publicPath": "static/chunks/styles.js"
+    }
+  ],
+  "../src/index.css": [
+    {
+      "id": "./src/index.css",
+      "name": "./src/index.css",
+      "file": "static/chunks/styles.js",
+      "publicPath": "static/chunks/styles.js"
+    }
+  ],
+  "./Home.css": [
+    {
+      "id": "./src/pages/Home.css",
+      "name": "./src/pages/Home.css",
+      "file": "static/chunks/styles.js",
+      "publicPath": "static/chunks/styles.js"
+    }
+  ]
+}

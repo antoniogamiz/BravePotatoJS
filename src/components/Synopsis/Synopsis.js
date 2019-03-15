@@ -2,7 +2,7 @@ import React from "react";
 
 import "./Synopsis.css";
 
-import icon from "../../theme/img/eye.svg";
+// import icon from "/static/theme/img/eye.svg";
 
 export default ({ manga }) => (
   <div className="synopsis__wrapper">
@@ -13,7 +13,11 @@ export default ({ manga }) => (
       {manga.chaptersList[0].title}
     </a>
     <div className="synopsis__views">
-      <img className="synopsis__icon" src={icon} alt="" />
+      <img
+        className="synopsis__icon"
+        src={"/static/theme/img/eye.svg"}
+        alt=""
+      />
       <p className="synopsis__counts">{manga.views}</p>
     </div>
     <p className="synopsis__synopsis">{manga.synopsis}</p>

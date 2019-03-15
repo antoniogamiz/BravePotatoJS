@@ -1,15 +1,15 @@
-import mock1 from "./theme/img/mock-portrait-1.jpg";
-import mock2 from "./theme/img/mock-portrait-2.jpg";
-import mock3 from "./theme/img/mock-portrait-3.jpg";
-import mock4 from "./theme/img/mock-portrait-4.jpg";
+let popIcon = "/static/theme/img/popular.svg";
+let latIcon = "/static/theme/img/stopwatch.svg";
+let genIcon = "/static/theme/img/price-tag.svg";
 
-import popIcon from "./theme/img/popular.svg";
-import latIcon from "./theme/img/stopwatch.svg";
-import genIcon from "./theme/img/price-tag.svg";
+let userIcon = "/static/theme/img/avatar.svg";
 
-import logoFont from "./theme/img/image.png";
-import logo from "./theme/img/cradle.svg";
-import userIcon from "./theme/img/avatar.svg";
+let logo = "/static/theme/img/cradle.svg";
+let logoFont = "/static/theme/img/image.png";
+let mock1 = "/static/theme/img/mock-portrait-1.jpg";
+let mock2 = "/static/theme/img/mock-portrait-2.jpg";
+let mock3 = "/static/theme/img/mock-portrait-3.jpg";
+let mock4 = "/static/theme/img/mock-portrait-4.jpg";
 
 // mock portraits
 let portraits = [mock1, mock2, mock3, mock4, mock1, mock2, mock3, mock4];
