@@ -1,14 +1,16 @@
 import React from "react";
 
-import "../src/index.css";
+import IndexPage from "../src/components/IndexPage/IndexPage";
 import App from "../src/App";
 import Home from "../src/components/Layout/Home/Home";
 
 const index = () => {
   return (
-    <App>
-      <Home />
-    </App>
+    <IndexPage>
+      <App>
+        <Home />
+      </App>
+    </IndexPage>
   );
 };
 

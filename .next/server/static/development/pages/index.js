@@ -104,8 +104,7 @@ module.exports =
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _src_index_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../src/index.css */ "./src/index.css");
-/* harmony import */ var _src_index_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_src_index_css__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _src_components_IndexPage_IndexPage__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../src/components/IndexPage/IndexPage */ "./src/components/IndexPage/IndexPage.js");
 /* harmony import */ var _src_App__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../src/App */ "./src/App.js");
 /* harmony import */ var _src_components_Layout_Home_Home__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../src/components/Layout/Home/Home */ "./src/components/Layout/Home/Home.js");
 
@@ -114,7 +113,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var index = function index() {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_src_App__WEBPACK_IMPORTED_MODULE_2__["default"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_src_components_Layout_Home_Home__WEBPACK_IMPORTED_MODULE_3__["default"], null));
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_src_components_IndexPage_IndexPage__WEBPACK_IMPORTED_MODULE_1__["default"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_src_App__WEBPACK_IMPORTED_MODULE_2__["default"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_src_components_Layout_Home_Home__WEBPACK_IMPORTED_MODULE_3__["default"], null)));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (index);
@@ -257,6 +256,57 @@ var text = "There are many reasons you should read Manga online, and if you are 
     className: "footer__copy"
   }, "\xA9 2018 MangaCradle.com. All rights reserved."));
 });
+
+/***/ }),
+
+/***/ "./src/components/IndexPage/IndexPage.css":
+/*!************************************************!*\
+  !*** ./src/components/IndexPage/IndexPage.css ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+
+
+/***/ }),
+
+/***/ "./src/components/IndexPage/IndexPage.js":
+/*!***********************************************!*\
+  !*** ./src/components/IndexPage/IndexPage.js ***!
+  \***********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/head */ "next/head");
+/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _IndexPage_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./IndexPage.css */ "./src/components/IndexPage/IndexPage.css");
+/* harmony import */ var _IndexPage_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_IndexPage_css__WEBPACK_IMPORTED_MODULE_2__);
+
+
+
+
+function IndexPage(_ref) {
+  var children = _ref.children;
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_head__WEBPACK_IMPORTED_MODULE_1___default.a, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
+    charset: "utf-8"
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("link", {
+    rel: "icon",
+    href: "/static/theme/img/cradle.png",
+    type: "image/x-icon"
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
+    name: "viewport",
+    content: "width=device-width, initial-scale=1, shrink-to-fit=no"
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
+    name: "theme-color",
+    content: "#000000"
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("title", null, "MangaCradle")), children);
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (IndexPage);
 
 /***/ }),
 
@@ -774,17 +824,6 @@ function (_Component) {
 
 /***/ }),
 
-/***/ "./src/index.css":
-/*!***********************!*\
-  !*** ./src/index.css ***!
-  \***********************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-
-
-/***/ }),
-
 /***/ "./src/randomData.js":
 /*!***************************!*\
   !*** ./src/randomData.js ***!
@@ -922,6 +961,17 @@ var chaptersList = [].concat(chaptersList_, chaptersList_, chaptersList_, chapte
 
 module.exports = __webpack_require__(/*! /home/antonio/Code/MangaCradle/manga-server/pages/index.js */"./pages/index.js");
 
+
+/***/ }),
+
+/***/ "next/head":
+/*!****************************!*\
+  !*** external "next/head" ***!
+  \****************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("next/head");
 
 /***/ }),
 
