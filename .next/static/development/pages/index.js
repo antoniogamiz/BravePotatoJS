@@ -3617,7 +3617,7 @@ var text = "There are many reasons you should read Manga online, and if you are 
     className: "footer__text"
   }, text), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
     className: "footer__copy"
-  }, "\xA9 2018 MangaCradle.com. All rights reserved."));
+  }, "\xA9 2019 MangaCradle.com. All rights reserved."));
 });
 
 /***/ }),
@@ -4078,11 +4078,7 @@ function (_Component) {
       var profileImg = this.props.profileImg;
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "user-profile"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "user-profile__name"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "user-profile__name__p"
-      }, "Anonymous User")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
         href: "#"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
         className: "user-profile__icon",

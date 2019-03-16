@@ -11,7 +11,7 @@ export default () => (
     <p className="footer__title">{title}</p>
     <p className="footer__text">{text}</p>
     <p className="footer__copy">
-      &copy; 2018 MangaCradle.com. All rights reserved.
+      &copy; 2019 MangaCradle.com. All rights reserved.
     </p>
   </div>
 );

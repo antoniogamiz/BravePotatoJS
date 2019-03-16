@@ -1,28 +1,11 @@
 .user-profile {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    position: relative;
-}
-
-.user-profile__name {
-    font-size: 15px;
-    margin: 0 25px;
-    padding: 5px;
-    border-radius: 10px;
-    background-color: rgba(187,239,253,0.2);
-    height: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
-.user-profile__name__p {
-    font-size: 16px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
 }
 
 .user-profile__icon {
-    height: 30px;
-    width: 30px;
+  height: 30px;
+  width: 30px;
 }

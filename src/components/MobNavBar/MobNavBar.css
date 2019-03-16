@@ -1,31 +1,31 @@
 .mob-nav-bar {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.mob-nav-bar > .nav-icon  {
-    margin: 5px auto;
+.mob-nav-bar > .nav-icon {
+  margin: 5px auto;
 }
 
 .mob-nav-bar > button {
-    background: black;
-    font-weight: bold;
-    font-size: 15px;
-    color: #61dafb;
-    border: none;
-    padding: 5px 0;
-    text-align: center;
-    text-decoration: none;
-    cursor: pointer;   
-    margin: 10px 0 4px 0;
+  background: black;
+  font-weight: bold;
+  font-size: 15px;
+  color: #61dafb;
+  border: none;
+  padding: 5px 0;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  margin: 10px 0 4px 0;
 }
 
 .mob-nav-bar > button:focus {
-    outline: none;
+  outline: none;
+  color: greenyellow;
 }
 
 .mob-nav-bar > .nav-bar__items-list {
-    flex-direction: column;
-    background: rgba(105,105,105, 0.4);
+  flex-direction: column;
 }

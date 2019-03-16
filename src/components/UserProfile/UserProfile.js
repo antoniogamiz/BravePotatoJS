@@ -6,9 +6,6 @@ class UserProfile extends Component {
     const { profileImg } = this.props;
     return (
       <div className="user-profile">
-        <div className="user-profile__name">
-          <p className="user-profile__name__p">Anonymous User</p>
-        </div>
         {/* eslint-disable-next-line */}
         <a href="#">
           <img
