@@ -1,3 +1,7 @@
 body {
   background: url(/static/theme/img/body-bg.png);
 }
+
+* {
+  box-sizing: border-box;
+}
